@@ -1,0 +1,22 @@
+.currency {
+  display: inline-flex;
+  position: relative;
+
+  &:after {
+    content: "\f0d7";
+    font: 12px 'FontAwesome';
+    position: absolute;
+    top: 3px;
+    left: 33px;
+  }
+
+  &__item {
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: 700;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+}
