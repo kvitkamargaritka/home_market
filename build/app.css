@@ -252,6 +252,12 @@ h6 {
   font-size: 14px;
   font-weight: 300;
 }
+.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
 .btn {
   background-color: #ffffff;
   padding: 0 15px;
@@ -279,6 +285,21 @@ h6 {
   color: dimgrey;
 }
 .btn_opts:hover {
+  background-color: #fa5555;
+  color: #ffffff;
+  border-color: transparent;
+  transition: 0.5s;
+}
+.btn_heart,
+.btn_mail {
+  border: 1px solid #cccccc;
+  color: dimgrey;
+  font-size: 11px;
+  padding: 8px;
+  text-align: center;
+}
+.btn_heart:hover,
+.btn_mail:hover {
   background-color: #fa5555;
   color: #ffffff;
   border-color: transparent;
@@ -376,9 +397,15 @@ h6 {
 }
 .general-menu__el {
   padding: 14px 25px;
+  position: relative;
 }
 .general-menu__el:hover {
   background-color: #E13A31;
+}
+.general-menu__badge {
+  position: absolute;
+  top: -8px;
+  left: 71px;
 }
 .general-menu__link {
   text-decoration: none;
@@ -389,12 +416,6 @@ h6 {
   text-transform: uppercase;
   font-weight: 400;
   color: #ffffff;
-  position: relative;
-}
-.general-menu__img {
-  position: absolute;
-  top: -20px;
-  left: 45px;
 }
 .payments__el {
   display: -webkit-inline-flex;
@@ -409,6 +430,7 @@ h6 {
   font-size: 25px;
 }
 .sidebar {
+  width: 272px;
   border: 1px solid #E8E8E8;
 }
 .sidebar__title {
@@ -416,17 +438,25 @@ h6 {
   background-color: #EAEAEA;
   color: #3f3f3f;
   font-family: 'Lato', sans-serif;
-  padding: 10px 20px;
+  padding: 11px 20px;
 }
 .sidebar__el {
-  padding: 10px 20px;
+  padding: 11px 21px 12px 20px;
   border-bottom: 1px solid #E8E8E8;
 }
 .sidebar__ico {
   margin-right: 10px;
 }
 .sidebar__link {
+  display: block;
   text-decoration: none;
+  position: relative;
+}
+.sidebar__ico-arrow {
+  position: absolute;
+  top: 1px;
+  right: -12px;
+  color: #444;
 }
 .sidebar__name {
   font-size: 13px;
@@ -437,7 +467,7 @@ h6 {
 .sidebar__name:hover {
   color: #fa5555;
 }
-.carousel {
+.advert {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -448,25 +478,25 @@ h6 {
   opacity: 0.8;
   cursor: pointer;
 }
-.carousel:hover {
+.advert:hover {
   background-color: #f2f2f2;
 }
-.carousel__img {
+.advert__img {
   max-width: 50px;
   border: 1px solid white;
   margin-right: 10px;
 }
-.carousel__title {
+.advert__title {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   font-weight: 600;
 }
-.carousel__title:hover {
+.advert__title:hover {
   color: #fa5555;
 }
-.carousel__description {
+.advert__description {
   font-size: 12px;
 }
 .ico {
@@ -525,6 +555,89 @@ h6 {
   width: 20px;
   height: 20px;
 }
+.vertical-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.vertical-list__item {
+  margin-right: 37px;
+}
+.vertical-list__el {
+  margin-bottom: 10px;
+  padding-top: 4px;
+}
+.vertical-list__link {
+  text-decoration: none;
+}
+.vertical-list__link:hover {
+  color: #fa5555;
+}
+.vertical-list__text {
+  font-size: 12px;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-weight: 300;
+}
+.contacts__el {
+  margin-bottom: 5px;
+}
+.contacts__ico {
+  color: #fa5555;
+  margin: 0 5px 5px 0;
+}
+.contacts__text {
+  margin-bottom: 5px;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.badge {
+  display: block;
+  font-size: 8px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 29px;
+  height: 18px;
+  line-height: 18px;
+}
+.badge_hot {
+  background: url("/home_market/build/img/hot-label.png") no-repeat;
+}
+.badge_sale {
+  background: url("/home_market/build/img/sale-label.png") no-repeat;
+}
+.badge_new {
+  background: url("/home_market/build/img/new-label.png") no-repeat;
+}
+.post__el {
+  margin-top: 20px;
+}
+.post__text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.post__autor {
+  color: #999;
+}
+.post__autor_red {
+  color: #fa5555;
+}
 body {
   color: dimgrey;
+}
+a {
+  color: dimgrey;
+  text-decoration: none;
+}
+a:hover {
+  color: #fa5555;
 }

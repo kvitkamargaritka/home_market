@@ -1,4 +1,5 @@
 .sidebar {
+  width: 272px;
   border: 1px solid #E8E8E8;
 
   &__title {
@@ -6,7 +7,7 @@
     background-color: #EAEAEA;
     color: #3f3f3f;
     font-family: 'Lato', sans-serif;
-    padding: 10px 20px;
+    padding: 11px 20px;
   }
 
   &__list {
@@ -14,8 +15,8 @@
   }
 
   &__el {
-    padding: 10px 20px;
-    border-bottom: 1px solid #E8E8E8;;
+    padding: 11px 21px 12px 20px;
+    border-bottom: 1px solid #E8E8E8;
   }
 
   &__ico {
@@ -23,7 +24,16 @@
   }
 
   &__link {
+    display: block;
     text-decoration: none;
+    position: relative;
+  }
+
+  &__ico-arrow {
+    position: absolute;
+    top: 1px;
+    right: -12px;
+    color: #444;
   }
 
   &__name {
