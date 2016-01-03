@@ -1,0 +1,32 @@
+.collection-item {
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    //margin-left: -15px;
+  }
+
+  &__el {
+    display: inline-flex;
+    margin: 0 16px;
+  }
+
+  &__name {
+    position: relative;
+    color: dimgrey;
+    font-family: "ProximaNova";
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      color: #fa5555;
+    }
+
+    &:before {
+      content: '+';
+      position: absolute;
+      left: -12px;
+      top: 0;
+    }
+  }
+}
