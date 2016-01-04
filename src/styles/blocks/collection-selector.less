@@ -1,0 +1,25 @@
+.collection-selector {
+  width: 200px;
+  border: 3px solid #fa5555;
+  border-radius: 5px;
+  padding: 10px 8px;
+  position: relative;
+
+  &:after {
+    content: "\f0d7";
+    font: 12px 'FontAwesome';
+    position: absolute;
+    top: 4px;
+    left: 195px;
+  }
+
+  &__item {
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: dimgrey;
+    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+  }
+}

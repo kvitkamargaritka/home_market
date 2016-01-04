@@ -157,7 +157,7 @@
                                     <option value="JPY">JPY</option>
                                 </select>
                             </label>
-                        </div>
+                        </div><!-- currency end -->
                     </div><!-- header__right end -->
                 </div><!-- header__flex end -->
             </div><!-- container end -->
@@ -165,23 +165,62 @@
     </div>
 
     <div class="atom">
-        <div class="collection-selector">
-            <label>
-                <select class="collection-selector__item">
-                    <option value="ALL COLLECTION" selected>ALL COLLECTION</option>
-                    <option value="all collection">Beauty & Health</option>
-                    <option value="all collection">Book</option>
-                    <option value="all collection">Camera - Camcorder</option>
-                    <option value="all collection">Clothing</option>
-                    <option value="all collection">Home Appliances</option>
-                    <option value="all collection">Homelife</option>
-                    <option value="all collection">Kids & Baby</option>
-                    <option value="all collection">Smartphones & Cell Phones</option>
-                    <option value="all collection">Sport & Outdoor</option>
-                    <option value="all collection">Stationery</option>
-                </select>
-            </label>
-        </div>
+        <div class="search">
+            <form class="search__general" action="#">
+                <div class="search__category">
+                    <select class="search__select">
+                        <option value="all collection" selected>
+                            all collection
+                        </option>
+                        <option value="Beauty & Health">
+                            Beauty & Health
+                        </option>
+                        <option value="Book">
+                            Book
+                        </option>
+                        <option value="Camera">
+                            Camera - Camcorder
+                        </option>
+                        <option value="Clothing">
+                            Clothing
+                        </option>
+                        <option value="Home Appliances">
+                            Home Appliances
+                        </option>
+                        <option value="Homelife">
+                            Homelife
+                        </option>
+                        <option value="Kids & Baby">
+                            Kids & Baby
+                        </option>
+                        <option value="Smartphones & Cell Phones">
+                            Smartphones & Cell Phones
+                        </option>
+                        <option value="Sport & Outdoor">
+                            Sport & Outdoor
+                        </option>
+                        <option value="Stationery">
+                            Stationery
+                        </option>
+                    </select>
+                </div><!-- search__select end -->
+
+                <div class="search__field">
+                    <div class="input input__search">
+                        <input class="input__el"
+                               type="search"
+                               placeholder="Search our store"/>
+                    </div>
+                </div><!-- search__field end -->
+
+                <div class="search__action">
+                    <button class="btn btn_search">
+                        <i class="search__ico fa fa-search"></i>
+                    </button>
+                </div><!-- search__action end -->
+
+            </form>
+        </div><!-- search end -->
     </div>
 
     <div class="atom">
@@ -218,6 +257,56 @@
 
             </ul>
         </div><!-- item-opt end -->
+    </div>
+
+    <div class="atom">
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribe__flexbox">
+                    <h3 class="subscribe__text">
+                        <i class="subscribe__ico fa fa-envelope"></i>
+                        Make sure you don't miss interesting happenings by joining
+                        our newsletter program
+                    </h3>
+
+                    <form action="#">
+                        <input class="subscribe__email"
+                               type="email"
+                               placeholder="Enter your email ..."/>
+                        <button class="btn btn_subscribe">
+                            subscribe
+                        </button>
+                    </form>
+                </div>
+            </div><!-- container -->
+        </div><!-- subscribe end -->
+    </div>
+
+    <div class="atom">
+        <div class="item">
+
+            <div class="item__top">
+                <img class="item__img"
+                     src="src/img/item_1.jpg"
+                     alt="#"/>
+            </div>
+
+            <div class="item__center">
+                <a class="item__link" href="#">
+                    <h6 class="item__title">etiam lobortis purus dictum</h6>
+                </a>
+                <span class="item__price">$67.00</span>
+            </div>
+
+            <div class="item__bottom">
+                <input type="hidden"/>
+                <button class="btn btn_opts">
+                    <i class="fa fa-bars"></i>
+                    options
+                </button>
+            </div>
+
+        </div><!-- item end -->
     </div>
 
     <div class="atom">
@@ -315,15 +404,16 @@
                         </span>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- container end -->
+        </div><!-- general-menu end -->
     </div>
 
     <div class="atom">
         <div class="sidebar">
             <h6 class="sidebar__title">
                 <i class="sidebar__ico
-                          fa fa-list"></i>
+                          fa fa-list">
+                </i>
                 all collections
             </h6>
             <ul class="sidebar__list">
@@ -491,12 +581,14 @@
                     Sale up to 70% from Nov 1, 2015 to Nov 7, 2015
                 </span>
             </div>
-        </div>
+        </div><!-- advert end -->
     </div>
 
     <div class="atom">
         <div class="title">
-            <span class="title__name">about us</span>
+            <span class="title__name">
+                about us
+            </span>
         </div>
     </div>
 
@@ -504,21 +596,31 @@
         <div class="contacts">
             <ul class="contacts__list">
                 <li class="contacts__el">
-                    <i class=" contacts__ico fa fa-map-marker"></i>
+                    <i class="contacts__ico
+                              fa fa-map-marker">
+                    </i>
                     <span class="contacts__text">
                         474 Ontario St Toronto, ON M4X 1M7 Canada
                     </span>
                 </li>
                 <li class="contacts__el">
-                    <i class=" contacts__ico fa fa-phone"></i>
-                    <span class="contacts__text">(+1234)56789xxx</span>
+                    <i class="contacts__ico
+                              fa fa-phone">
+                    </i>
+                    <span class="contacts__text">
+                        (+1234)56789xxx
+                    </span>
                 </li>
                 <li class="contacts__el">
-                    <i class=" contacts__ico fa fa-envelope"></i>
-                    <span class="contacts__text">tadathemes@gmail.com</span>
+                    <i class="contacts__ico
+                              fa fa-envelope">
+                    </i>
+                    <span class="contacts__text">
+                        tadathemes@gmail.com
+                    </span>
                 </li>
             </ul>
-        </div>
+        </div><! -- contacts end -->
     </div>
 
     <div class="atom">
@@ -531,13 +633,17 @@
 
     <div class="atom">
         <div class="title">
-            <span class="title__name">information</span>
+            <span class="title__name">
+                information
+            </span>
         </div>
     </div>
 
     <div class="atom">
         <div class="title">
-            <span class="title__name">information</span>
+            <span class="title__name">
+                information
+            </span>
         </div>
         <div class="vertical-list">
             <ul class="vertical-list__item">
@@ -622,42 +728,58 @@
             <ul class="brands__list">
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_1.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_1.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_2.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_2.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_3.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_3.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_4.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_4.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_5.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_5.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_6.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_6.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_7.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_7.png"
+                             alt="#"/>
                     </a>
                 </li>
                 <li class="brands__el">
                     <a class="brands__link" href="#">
-                        <img class="brands__img" src="src/img/brand_8.png" alt="#"/>
+                        <img class="brands__img"
+                             src="src/img/brand_8.png"
+                             alt="#"/>
                     </a>
                 </li>
             </ul>
@@ -666,7 +788,9 @@
 
     <div class="atom">
         <div class="collection-title">
-            <img class="collection-title__img" src="src/img/smartphones.png" alt="#"/>
+            <img class="collection-title__img"
+                 src="src/img/smartphones.png"
+                 alt="#"/>
             <a class="collection-title__link" href="#">
                 <span class="collection-title__text">
                     Smartphones & cell phones
@@ -710,7 +834,7 @@
                     <i class="collection-name__ico fa fa-caret-right"></i>
                 </li>
             </ul>
-        </div>
+        </div><!-- collection-item end -->
     </div>
 
     <div class="atom">
@@ -723,78 +847,124 @@
         <div class="tags">
             <ul class="tags__list">
                 <li class="tags__el">
-                    <span class="tags__text">100 - 200</span>
+                    <span class="tags__text">
+                        100 - 200
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">200 - 300</span>
+                    <span class="tags__text">
+                        200 - 300
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">300 - 400</span>
+                    <span class="tags__text">
+                        300 - 400
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">400 - 500</span>
+                    <span class="tags__text">
+                        400 - 500
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">BB</span>
+                    <span class="tags__text">
+                        BB
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Blue</span>
+                    <span class="tags__text">
+                        Blue
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Body Care</span>
+                    <span class="tags__text">
+                        Body Care
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Gucci</span>
+                    <span class="tags__text">
+                        Gucci
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Hair Care</span>
+                    <span class="tags__text">
+                        Hair Care
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Hamilton</span>
+                    <span class="tags__text">
+                        Hamilton
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Mackup</span>
+                    <span class="tags__text">
+                        Mackup
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Omega</span>
+                    <span class="tags__text">
+                        Omega
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Perfumes</span>
+                    <span class="tags__text">
+                        Perfumes
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Red</span>
+                    <span class="tags__text">
+                        Red
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Skin Care</span>
+                    <span class="tags__text">
+                        Skin Care
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Tissot</span>
+                    <span class="tags__text">
+                        Tissot
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Under 100</span>
+                    <span class="tags__text">
+                        Under 100
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">While</span>
+                    <span class="tags__text">
+                        While
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">Yellow</span>
+                    <span class="tags__text">
+                        Yellow
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">abc</span>
+                    <span class="tags__text">
+                        abc
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">bootstrap</span>
+                    <span class="tags__text">
+                        bootstrap
+                    </span>
                 </li>
                 <li class="tags__el">
-                    <span class="tags__text">cell phone</span>
+                    <span class="tags__text">
+                        cell phone
+                    </span>
                 </li>
             </ul>
-        </div>
+        </div><!-- tags end -->
     </div>
 
     <div class="atom">
         <div class="title">
-            <span class="title__name">recent post</span>
+            <span class="title__name">
+                recent post
+            </span>
         </div>
     </div>
 
@@ -812,7 +982,7 @@
                     by <span class="post__autor_red">Tada Theme</span>
                 </span>
             </div>
-        </div>
+        </div><!-- post end -->
     </div>
 
     <div class="atom">
@@ -836,7 +1006,9 @@
     <div class="atom">
         <div class="post">
             <div class="title">
-                <span class="title__name">recent post</span>
+                <span class="title__name">
+                    recent post
+                </span>
             </div>
             <ul class="post__list">
                 <li class="post__el">
