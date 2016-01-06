@@ -9,10 +9,21 @@
   &__el {
     display: inline-flex;
     margin: 0 16px;
+    position: relative;
+
+    &:before {
+      content: '+';
+      position: absolute;
+      left: -12px;
+      top: 0;
+    }
+  }
+
+  &__link {
+
   }
 
   &__name {
-    position: relative;
     color: dimgrey;
     font-family: "ProximaNova";
     font-size: 14px;
@@ -22,11 +33,15 @@
       color: #fa5555;
     }
 
-    &:before {
-      content: '+';
+  }
+
+  &_arrow {
+    position: relative;
+
+    &:after {
+      content: "\f0da";
+      font: 14px FontAwesome;
       position: absolute;
-      left: -12px;
-      top: 0;
     }
   }
 }

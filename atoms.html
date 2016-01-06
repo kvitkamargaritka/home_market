@@ -9,14 +9,26 @@
                 300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet'
           type='text/css'>
-    <!--<link rel="stylesheet"-->
-          <!--href="fonts/ProximaNova-Regular.otf"-->
-          <!--type="text/css"/>-->
     <link rel="stylesheet" href="build/app.css"/>
+
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="build/js/app.js"></script>
+
 
 </head>
 <body>
 <section class="wrapper">
+
+    <div class="atom">
+        <div class="fotorama">
+            <img src="src/img/slide_1.jpg" alt="#"/>
+            <img src="src/img/slide_2.jpg" alt="#"/>
+        </div>
+    </div>
 
     <div class="atom">
         <div class="welcome">
@@ -265,12 +277,12 @@
                 <div class="subscribe__flexbox">
                     <h3 class="subscribe__text">
                         <i class="subscribe__ico fa fa-envelope"></i>
-                        Make sure you don't miss interesting happenings by joining
-                        our newsletter program
+                        Make sure you don't miss interesting happenings
+                        by joining our newsletter program
                     </h3>
 
                     <form action="#">
-                        <input class="subscribe__email"
+                        <input class="input__email"
                                type="email"
                                placeholder="Enter your email ..."/>
                         <button class="btn btn_subscribe">
@@ -827,11 +839,11 @@
                         Firefox OS
                     </span>
                 </li>
-                <li class="collection-item__el">
+                <li class="collection-item__el collection-item__el_arrow">
                     <span class="collection-item__name">
                         See All
                     </span>
-                    <i class="collection-name__ico fa fa-caret-right"></i>
+                    <!--<i class="collection-name__ico fa fa-caret-right"></i>-->
                 </li>
             </ul>
         </div><!-- collection-item end -->
