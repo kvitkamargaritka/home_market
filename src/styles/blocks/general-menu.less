@@ -8,12 +8,7 @@
   }
 
   &__el {
-    padding: 14px 25px;
     position: relative;
-
-    &:hover {
-      background-color: #E13A31;
-    }
   }
 
   &__badge {
@@ -23,14 +18,92 @@
   }
 
   &__link {
+    padding: 17px 25px;
+    display: block;
     text-decoration: none;
+    font-family: 'Lato';
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+
+    &:hover {
+      background-color: #E13A31;
+    }
+
+    &_active {
+      background: #E13A31;
+    }
   }
 
   &__text {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #ffffff;
+    position: relative;
+  }
+
+  &__ico {
+    display: inline;
+    position: relative;
+    left: 4px;
+    top: -2px;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  &__dropdown {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    display: none;
+    position: absolute;
+
+    & a {
+      color: dimgrey;
+      font-size: 13px;
+      display: block;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    &_collection {
+      width: 199px;
+      top: 49px;
+      left: -1px;
+      z-index: 1;
+      padding: 14px 0;
+
+      & li {
+        padding: 5px 20px;
+      }
+    }
+
+    &_bigmenu {
+      background: url("/home_market/src/img/bg-bigmenu.png") no-repeat #fff;
+      background-position: right bottom;
+      display: none;
+      flex-direction: row;
+      cursor: default;
+      z-index: 5;
+      width: 1180px;
+      top: 48px;
+      left: -246px;
+
+      & li {
+        width: 25%;
+        padding: 5px 20px;
+      }
+
+      & ul {
+
+      }
+
+      p {
+        font-size: 13px;
+        margin: 0 0 7px 0;
+        line-height: 1.5;
+      }
+    }
   }
 }
+

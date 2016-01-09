@@ -1,16 +1,12 @@
-.wrapper {
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .atom {
   margin: 10px;
   padding: 15px;
   border: 1px solid #ccc;
+
+  &_min {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 //welcome
@@ -45,11 +41,16 @@
 
 //promo
 .promo {
+  width: 885px;
+  height: 480px;
+  background-image: url(img/promo_main.jpg);
 
-  &__img {
-
+  &__carousel {
+    position: relative;
+    top: 400px;
   }
 }
+
 
 //logo
 .logo {
@@ -171,8 +172,12 @@
   }
 }
 
-
-
+.bigmenu__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-transform: uppercase;
+}
 
 
 

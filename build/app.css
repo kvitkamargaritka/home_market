@@ -217,17 +217,14 @@ h6 {
 .text-small {
   font-size: 12px;
 }
-.wrapper {
-  margin: 0 auto;
-}
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
 .atom {
   margin: 10px;
   padding: 15px;
   border: 1px solid #ccc;
+}
+.atom_min {
+  width: 320px;
+  margin: 0 auto;
 }
 .welcome {
   background-color: #F0F0F0;
@@ -250,6 +247,15 @@ h6 {
   background: #e5e5e5;
   height: 1px;
   position: absolute;
+}
+.promo {
+  width: 885px;
+  height: 480px;
+  background-image: url(img/promo_main.jpg);
+}
+.promo__carousel {
+  position: relative;
+  top: 400px;
 }
 .copyright__descr {
   font-family: 'proxima_nova_rgregular', sans-serif;
@@ -304,6 +310,12 @@ h6 {
   width: 12px;
   height: 12px;
   background: white;
+}
+.bigmenu__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-transform: uppercase;
 }
 .btn {
   background-color: #ffffff;
@@ -441,6 +453,13 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.wrapper {
+  margin: 0 auto;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
 .general-menu {
   background-color: #F55751;
   border-top: 1px solid #e5e5e5;
@@ -452,11 +471,7 @@ h6 {
   display: inline-flex;
 }
 .general-menu__el {
-  padding: 14px 25px;
   position: relative;
-}
-.general-menu__el:hover {
-  background-color: #E13A31;
 }
 .general-menu__badge {
   position: absolute;
@@ -464,14 +479,78 @@ h6 {
   left: 71px;
 }
 .general-menu__link {
+  padding: 17px 25px;
+  display: block;
   text-decoration: none;
-}
-.general-menu__text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
+  position: relative;
+}
+.general-menu__link:hover {
+  background-color: #E13A31;
+}
+.general-menu__link_active {
+  background: #E13A31;
+}
+.general-menu__text {
+  position: relative;
+}
+.general-menu__ico {
+  display: inline;
+  position: relative;
+  left: 4px;
+  top: -2px;
+  font-size: 10px;
+  color: #fff;
+}
+.general-menu__dropdown {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: none;
+  position: absolute;
+}
+.general-menu__dropdown a {
+  color: dimgrey;
+  font-size: 13px;
+  display: block;
+}
+.general-menu__dropdown a:hover {
+  color: red;
+}
+.general-menu__dropdown_collection {
+  width: 199px;
+  top: 49px;
+  left: -1px;
+  z-index: 1;
+  padding: 14px 0;
+}
+.general-menu__dropdown_collection li {
+  padding: 5px 20px;
+}
+.general-menu__dropdown_bigmenu {
+  background: url("/home_market/src/img/bg-bigmenu.png") no-repeat #fff;
+  background-position: right bottom;
+  display: none;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: default;
+  z-index: 5;
+  width: 1180px;
+  top: 48px;
+  left: -246px;
+}
+.general-menu__dropdown_bigmenu li {
+  width: 25%;
+  padding: 5px 20px;
+}
+.general-menu__dropdown_bigmenu p {
+  font-size: 13px;
+  margin: 0 0 7px 0;
+  line-height: 1.5;
 }
 .payments__el {
   display: -webkit-inline-flex;
@@ -527,7 +606,7 @@ h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 293px;
+  width: 252px;
   padding: 10px 20px;
   background-color: #F3F0EC;
   border: 1px solid #d7d7d7;
@@ -548,12 +627,14 @@ h6 {
   display: flex;
   font-size: 13px;
   font-weight: 600;
+  margin-bottom: 3px;
 }
 .advert__title:hover {
   color: #fa5555;
 }
 .advert__description {
   font-size: 12px;
+  line-height: 1.5;
 }
 .ico {
   display: -webkit-inline-flex;
@@ -860,7 +941,4 @@ body {
 a {
   color: dimgrey;
   text-decoration: none;
-}
-a:hover {
-  color: #fa5555;
 }

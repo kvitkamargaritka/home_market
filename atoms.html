@@ -18,10 +18,114 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="build/js/app.js"></script>
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
 
 </head>
 <body>
 <section class="wrapper">
+
+    <div class="atom">
+        <div class="promo">
+            <div class="promo__carousel">
+                <div class="carousel">
+                    <div>
+                        <div class="advert">
+                            <div class="advert__left">
+                                <img class="advert__img"
+                                     src="src/img/slideshow_01.jpg"
+                                     alt="#"/>
+                            </div>
+                            <div class="advert__right">
+                                <span class="advert__title">
+                                    Opening celebration 7th store
+                                </span>
+                                <span class="advert__description">
+                                    Sale up to 70% from Nov 1, 2015 to Nov
+                                    7, 2015
+                                </span>
+                            </div>
+                        </div><!-- advert end -->
+                    </div>
+
+                    <div>
+                        <div class="advert">
+                            <div class="advert__left">
+                                <img class="advert__img"
+                                     src="src/img/slideshow_02.jpg"
+                                     alt="#"/>
+                            </div>
+                            <div class="advert__right">
+                                <span class="advert__title">
+                                    Beautiful woman 2015
+                                </span>
+                                <span class="advert__description">
+                                    high-end products cosmetics & mackup
+                                </span>
+                            </div>
+                        </div><!-- advert end -->
+                    </div>
+
+                    <div>
+                        <div class="advert">
+                            <div class="advert__left">
+                                <img class="advert__img"
+                                     src="src/img/slideshow_03.jpg"
+                                     alt="#"/>
+                            </div>
+                            <div class="advert__right">
+                                <span class="advert__title">
+                                    Sony Xperia Z5
+                                </span>
+                                <span class="advert__description">
+                                    buy now only today sale 60% for all colour
+                                </span>
+                            </div>
+                        </div><!-- advert end -->
+                    </div>
+
+                    <div>
+                        <div class="advert">
+                            <div class="advert__left">
+                                <img class="advert__img"
+                                     src="src/img/slideshow_04.jpg"
+                                     alt="#"/>
+                            </div>
+                            <div class="advert__right">
+                                <span class="advert__title">
+                                    New Lego collection
+                                </span>
+                                <span class="advert__description">
+                                    best seller 2015
+                                </span>
+                            </div>
+                        </div><!-- advert end -->
+                    </div>
+
+                    <div>
+                        <div class="advert">
+                            <div class="advert__left">
+                                <img class="advert__img"
+                                     src="src/img/slideshow_05.jpg"
+                                     alt="#"/>
+                            </div>
+                            <div class="advert__right">
+                                <span class="advert__title">
+                                    Christmas 2015
+                                </span>
+                                <span class="advert__description">
+                                    Merry Christmas
+                                </span>
+                            </div>
+                        </div><!-- advert end -->
+                    </div>
+                </div><!-- carousel end -->
+            </div><!-- promo__carousel end -->
+        </div><!-- promo end -->
+    </div>
 
     <div class="atom">
         <div class="fotorama">
@@ -362,40 +466,154 @@
             <div class="container">
                 <ul class="general-menu__list">
                     <li class="general-menu__el">
-                        <span class="general-menu__text">
+                        <a class="general-menu__link general-menu__link_active">
                             home
-                        </span>
+                        </a>
                     </li>
-                    <li class="general-menu__el">
+                    <li class="general-menu__el general-menu__el_collection">
                         <a class="general-menu__link" href="#">
-                            <span class="general-menu__text">
-                                collection
-                                <i class="fa fa-caret-down"></i>
+                            <span class="collection__text">
+                                collections
+                                <i class="general-menu__ico fa fa-caret-down"></i>
                             </span>
                         </a>
+                        <ul class="general-menu__dropdown
+                                   general-menu__dropdown_collection">
+                            <li>
+                                <a href="#">Book</a>
+                            </li>
+                            <li>
+                                <a href="#">Health & Beauty</a>
+                            </li>
+                            <li>
+                                <a href="#">Homelife</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Appliances</a>
+                            </li>
+                            <li>
+                                <a href="#">Smartphones & Cell Phones</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Kids & Baby</a>
+                            </li>
+                            <li>
+                                <a href="#">Toy and Gift</a>
+                            </li>
+                            <li>
+                                <a href="#">Stationery</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
                             <span class="general-menu__text">
                                 shop
-                                <i class="fa fa-caret-down"></i>
+                                <i class="general-menu__ico fa fa-caret-down"></i>
+                            </span>
+                            <span class="general-menu__badge
+                                         badge badge_hot">
+                                hot
                             </span>
                         </a>
-                        <span class="general-menu__badge
-                                     badge badge_hot">
-                            hot
-                        </span>
+
+                        <ul class="general-menu__dropdown general-menu__dropdown_bigmenu">
+                            <li>
+                                <a href="#">
+                                    <img src="src/img/logo-shop.png" alt="#"/>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, quod fabellas
+                                    hendrerit per eu, mea populo epicuri et,
+                                    ea possim numquam mea.
+                                </p>
+                                <p>Duo harum ornatus ponderum an, at ius zril
+                                    menandri praesent. Bonorum tacimates interesset
+                                    has ei, pro ignota prodesset at. Vel ea velit
+                                    percipitur.
+                                </p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">1st Collections</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Book</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Health & Beatuty</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Homelife</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Appliances</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Smartphones & Cell Phones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">2nd Collections</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Camera - Camcorder</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kids & Baby</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Toy and Gift</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stationery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">Pages</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">All Collections</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">All Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
                             <span class="general-menu__text">
                                 today's deals
                             </span>
+                            <span class="general-menu__badge
+                                         badge badge_sale">
+                                    sale
+                            </span>
                         </a>
-                        <span class="general-menu__badge
-                                     badge badge_sale">
-                            sale
-                        </span>
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
@@ -409,11 +627,11 @@
                             <span class="general-menu__text">
                                 lookbook
                             </span>
+                            <span class="general-menu__badge
+                                         badge badge_new">
+                                new
+                            </span>
                         </a>
-                        <span class="general-menu__badge
-                                     badge badge_new">
-                            new
-                        </span>
                     </li>
                 </ul>
             </div><!-- container end -->
@@ -561,14 +779,6 @@
             </span>
         </div>
     </div>
-    
-    <div class="atom">
-        <div class="promo">
-            <img class="promo__img"
-                 src="src/img/promo_main.jpg"
-                 alt="#"/>
-        </div>
-    </div>
 
     <div class="atom">
         <div class="logo">
@@ -591,6 +801,60 @@
                 </span>
                 <span class="advert__description">
                     Sale up to 70% from Nov 1, 2015 to Nov 7, 2015
+                </span>
+            </div>
+        </div><!-- advert end -->
+    </div>
+
+    <div class="atom">
+        <div class="advert">
+            <div class="advert__left">
+                <img class="advert__img"
+                     src="src/img/slideshow_02.jpg"
+                     alt="#"/>
+            </div>
+            <div class="advert__right">
+                <span class="advert__title">
+                    Beautiful woman 2015
+                </span>
+                <span class="advert__description">
+                    high-end products cosmetics & mackup
+                </span>
+            </div>
+        </div><!-- advert end -->
+    </div>
+
+    <div class="atom">
+        <div class="advert">
+            <div class="advert__left">
+                <img class="advert__img"
+                     src="src/img/slideshow_03.jpg"
+                     alt="#"/>
+            </div>
+            <div class="advert__right">
+                <span class="advert__title">
+                    Sony Xperia Z5
+                </span>
+                <span class="advert__description">
+                    buy now only today sale 60% for all colour
+                </span>
+            </div>
+        </div><!-- advert end -->
+    </div>
+
+    <div class="atom">
+        <div class="advert">
+            <div class="advert__left">
+                <img class="advert__img"
+                     src="src/img/slideshow_04.jpg"
+                     alt="#"/>
+            </div>
+            <div class="advert__right">
+                <span class="advert__title">
+                    New Lego collection
+                </span>
+                <span class="advert__description">
+                    best seller 2015
                 </span>
             </div>
         </div><!-- advert end -->
@@ -1055,6 +1319,92 @@
                 </li>
             </ul>
         </div><!-- post end -->
+    </div>
+
+
+    <div class="atom">
+        <ul class="general-menu__dropdown general-menu__dropdown_bigmenu">
+            <li>
+                <a href="#">
+                    <img src="src/img/logo-shop.png" alt="#"/>
+                </a>
+                <p>Lorem ipsum dolor sit amet, quod fabellas
+                    hendrerit per eu, mea populo epicuri et,
+                    ea possim numquam mea.
+                </p>
+                <p>Duo harum ornatus ponderum an, at ius zril
+                    menandri praesent. Bonorum tacimates interesset
+                    has ei, pro ignota prodesset at. Vel ea velit
+                    percipitur.
+                </p>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <span class="bigmenu__title">1st Collections</span>
+                    </li>
+                    <li>
+                        <a href="#">Book</a>
+                    </li>
+                    <li>
+                        <a href="#">Health & Beatuty</a>
+                    </li>
+                    <li>
+                        <a href="#">Homelife</a>
+                    </li>
+                    <li>
+                        <a href="#">Home Appliances</a>
+                    </li>
+                    <li>
+                        <a href="#">Smartphones & Cell Phones</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <span class="bigmenu__title">2nd Collections</span>
+                    </li>
+                    <li>
+                        <a href="#">Camera - Camcorder</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids & Baby</a>
+                    </li>
+                    <li>
+                        <a href="#">Toy and Gift</a>
+                    </li>
+                    <li>
+                        <a href="#">Stationery</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <span class="bigmenu__title">Pages</span>
+                    </li>
+                    <li>
+                        <a href="#">All Collections</a>
+                    </li>
+                    <li>
+                        <a href="#">All Products</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">Wishlist</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
 
