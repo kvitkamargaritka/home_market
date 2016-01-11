@@ -268,19 +268,10 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-.collection-title__img {
-  margin-right: 7px;
-  vertical-align: -4px;
-}
-.collection-title__text {
-  text-transform: uppercase;
-  color: dimgrey;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-.collection-title__text:hover {
-  color: #fa5555;
+.rating-star__badge {
+  font-size: 10px;
+  color: #ffd200;
+  margin-bottom: 5px;
 }
 .subscribe {
   background: #fa5555;
@@ -301,16 +292,6 @@ h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-.fotorama__nav-wrap {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-}
-.fotorama__dot {
-  width: 12px;
-  height: 12px;
-  background: white;
-}
 .bigmenu__title {
   font-size: 18px;
   font-weight: 700;
@@ -326,11 +307,8 @@ h6 {
   outline: none;
 }
 .btn_search {
-  top: 3px;
-  right: 4px;
-  width: 34px;
-  height: 34px;
-  position: absolute;
+  width: 36px;
+  height: 36px;
 }
 .btn_subscribe {
   background-color: #363636;
@@ -348,6 +326,7 @@ h6 {
   font-size: 11px;
   padding: 9px 30px;
   color: dimgrey;
+  margin-top: 5px;
 }
 .btn_opts:hover {
   background-color: #fa5555;
@@ -473,6 +452,9 @@ h6 {
 .general-menu__el {
   position: relative;
 }
+.general-menu__el:hover .general-menu__dropdown {
+  visibility: visible;
+}
 .general-menu__badge {
   position: absolute;
   top: -8px;
@@ -509,8 +491,8 @@ h6 {
 .general-menu__dropdown {
   background: #ffffff;
   border: 1px solid #e5e5e5;
-  display: none;
   position: absolute;
+  visibility: hidden;
 }
 .general-menu__dropdown a {
   color: dimgrey;
@@ -528,23 +510,24 @@ h6 {
   padding: 14px 0;
 }
 .general-menu__dropdown_collection li {
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 .general-menu__dropdown_bigmenu {
   background: url("/home_market/src/img/bg-bigmenu.png") no-repeat #fff;
   background-position: right bottom;
-  display: none;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   cursor: default;
   z-index: 5;
   width: 1180px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  visibility: hidden;
+  padding: 15px 0;
   top: 48px;
   left: -246px;
 }
 .general-menu__dropdown_bigmenu li {
-  width: 25%;
+  width: 100%;
   padding: 5px 20px;
 }
 .general-menu__dropdown_bigmenu p {
@@ -740,6 +723,9 @@ h6 {
   width: 29px;
   height: 18px;
   line-height: 18px;
+  position: absolute;
+  top: -8px;
+  right: 0;
 }
 .badge_hot {
   background: url("/home_market/build/img/hot-label.png") no-repeat;
@@ -860,14 +846,15 @@ h6 {
   margin: 0 0 -1px -1px;
 }
 .input__el {
-  height: 32px;
-  width: 300px;
+  height: 38px;
+  width: 330px;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
+  padding-left: 10px;
 }
 .input__email {
   width: 351px;
@@ -888,6 +875,9 @@ h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+.search__category {
+  border-right: 3px solid #fa5555;
+}
 .search__select {
   box-sizing: border-box;
   width: 200px;
@@ -903,10 +893,7 @@ h6 {
 }
 .search__field {
   width: 100%;
-}
-.search__action {
-  position: relative;
-  line-height: 34px;
+  margin-right: 4px;
 }
 .search__ico {
   color: #808080;
@@ -933,6 +920,55 @@ h6 {
   color: dimgrey;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
+}
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.fotorama__dot {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: none;
+}
+.item {
+  width: 223px;
+}
+.item__img {
+  width: 208px;
+  height: 208px;
+}
+.item__title {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  color: #444;
+  margin: 5px 0;
+}
+.item__title:hover {
+  color: #fa5555;
+}
+.item__price {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: lato;
+  color: #fa5555;
+}
+.collection-title__img {
+  margin-right: 7px;
+  vertical-align: -4px;
+}
+.collection-title__text {
+  text-transform: uppercase;
+  color: dimgrey;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.collection-title__text:hover {
+  color: #fa5555;
 }
 body {
   font-family: "ProximaNova";

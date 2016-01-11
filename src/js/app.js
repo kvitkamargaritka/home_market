@@ -23,14 +23,15 @@ $(function() {
 
 /** end slick **/
 
-  var elements = $('.general-menu__link');
-
-  elements.each(function (index, el) {
-    $(el).hover(function () {
-      //$(this).parent().find('.content').toggle();
-      $(this).parent().find('.general-menu__dropdown').fadeToggle();
-    })
-  });
+  //var elements = $('.general-menu__link');
+  //
+  //elements.each(function (index, el) {
+  //  $(el).hover(function () {
+  //    $(this).parent().find('.general-menu__dropdown').slideToggle('slow');
+  //    //$(this).parent().find('.general-menu__dropdown').slideDown();
+  //    //$(this).parent().find('.general-menu__dropdown').slideUp();
+  //  })
+  //});
 
 
 });

@@ -9,6 +9,10 @@
 
   &__el {
     position: relative;
+
+    &:hover .general-menu__dropdown {
+      visibility: visible;
+    }
   }
 
   &__badge {
@@ -53,8 +57,8 @@
   &__dropdown {
     background: #ffffff;
     border: 1px solid #e5e5e5;
-    display: none;
     position: absolute;
+    visibility: hidden;
 
     & a {
       color: dimgrey;
@@ -74,23 +78,24 @@
       padding: 14px 0;
 
       & li {
-        padding: 5px 20px;
+        padding: 10px 20px;
       }
     }
 
     &_bigmenu {
       background: url("/home_market/src/img/bg-bigmenu.png") no-repeat #fff;
       background-position: right bottom;
-      display: none;
-      flex-direction: row;
       cursor: default;
       z-index: 5;
       width: 1180px;
+      display: inline-flex;
+      visibility: hidden;
+      padding: 15px 0;
       top: 48px;
       left: -246px;
 
       & li {
-        width: 25%;
+        width: 100%;
         padding: 5px 20px;
       }
 

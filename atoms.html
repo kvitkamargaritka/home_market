@@ -9,9 +9,9 @@
                 300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet'
           type='text/css'>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="build/app.css"/>
 
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -145,7 +145,6 @@
     <div class="atom">
         <div class="social">
             <ul class="social__list">
-
                 <li class="social__el">
                     <a href="#" class="social__link">
                         <i class="social__ico fa fa-twitter-square"></i>
@@ -176,7 +175,6 @@
                         <i class="social__ico fa fa-vimeo-square"></i>
                     </a>
                 </li>
-
             </ul>
         </div><!-- social end -->
     </div>
@@ -286,7 +284,7 @@
                 <div class="search__category">
                     <select class="search__select">
                         <option value="all collection" selected>
-                            all collection
+                            all collections
                         </option>
                         <option value="Beauty & Health">
                             Beauty & Health
@@ -334,7 +332,6 @@
                         <i class="search__ico fa fa-search"></i>
                     </button>
                 </div><!-- search__action end -->
-
             </form>
         </div><!-- search end -->
     </div>
@@ -342,7 +339,6 @@
     <div class="atom">
         <div class="item-opt">
             <ul class="item-opt__list">
-
                 <li class="item-opt__el">
                     <i class="item-opt__ico
                               fa
@@ -370,7 +366,6 @@
                         Shopping Cart
                     </p>
                 </li>
-
             </ul>
         </div><!-- item-opt end -->
     </div>
@@ -408,8 +403,19 @@
             </div>
 
             <div class="item__center">
+                <div class="rating-star">
+                    <span class="rating-star__badge">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </span>
+                </div>
                 <a class="item__link" href="#">
-                    <h6 class="item__title">etiam lobortis purus dictum</h6>
+                    <h6 class="item__title">
+                        etiam lobortis purus dictum
+                    </h6>
                 </a>
                 <span class="item__price">$67.00</span>
             </div>
@@ -423,6 +429,30 @@
             </div>
 
         </div><!-- item end -->
+    </div>
+
+    <div class="atom">
+        <div class="rating-star">
+            <span class="rating-star__badge">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="atom">
+        <div class="rating-star">
+            <span class="rating-star__badge">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </span>
+        </div>
     </div>
 
     <div class="atom">
@@ -477,6 +507,7 @@
                                 <i class="general-menu__ico fa fa-caret-down"></i>
                             </span>
                         </a>
+                        <!-- general-menu__dropdown_collection -->
                         <ul class="general-menu__dropdown
                                    general-menu__dropdown_collection">
                             <li>
@@ -507,6 +538,7 @@
                                 <a href="#">Stationery</a>
                             </li>
                         </ul>
+                        <!-- general-menu__dropdown_collection end -->
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
@@ -514,13 +546,12 @@
                                 shop
                                 <i class="general-menu__ico fa fa-caret-down"></i>
                             </span>
-                            <span class="general-menu__badge
-                                         badge badge_hot">
-                                hot
-                            </span>
                         </a>
+                        <span class="badge badge_hot">hot</span>
 
-                        <ul class="general-menu__dropdown general-menu__dropdown_bigmenu">
+                        <!-- general-menu__dropdown_bigmenu -->
+                        <ul class="general-menu__dropdown
+                                   general-menu__dropdown_bigmenu">
                             <li>
                                 <a href="#">
                                     <img src="src/img/logo-shop.png" alt="#"/>
@@ -538,7 +569,9 @@
                             <li>
                                 <ul>
                                     <li>
-                                        <span class="bigmenu__title">1st Collections</span>
+                                        <span class="bigmenu__title">
+                                            1st Collections
+                                        </span>
                                     </li>
                                     <li>
                                         <a href="#">Book</a>
@@ -602,18 +635,15 @@
                                 </ul>
                             </li>
                         </ul>
-
+                        <!-- general-menu__dropdown_bigmenu end -->
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
                             <span class="general-menu__text">
                                 today's deals
                             </span>
-                            <span class="general-menu__badge
-                                         badge badge_sale">
-                                    sale
-                            </span>
                         </a>
+                        <span class="badge badge_sale">sale</span>
                     </li>
                     <li class="general-menu__el">
                         <a class="general-menu__link" href="#">
@@ -627,11 +657,8 @@
                             <span class="general-menu__text">
                                 lookbook
                             </span>
-                            <span class="general-menu__badge
-                                         badge badge_new">
-                                new
-                            </span>
                         </a>
+                        <span class="badge badge_new">new</span>
                     </li>
                 </ul>
             </div><!-- container end -->
@@ -1059,7 +1086,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div><!-- brands -->
     </div>
 
     <div class="atom">
@@ -1320,93 +1347,6 @@
             </ul>
         </div><!-- post end -->
     </div>
-
-
-    <div class="atom">
-        <ul class="general-menu__dropdown general-menu__dropdown_bigmenu">
-            <li>
-                <a href="#">
-                    <img src="src/img/logo-shop.png" alt="#"/>
-                </a>
-                <p>Lorem ipsum dolor sit amet, quod fabellas
-                    hendrerit per eu, mea populo epicuri et,
-                    ea possim numquam mea.
-                </p>
-                <p>Duo harum ornatus ponderum an, at ius zril
-                    menandri praesent. Bonorum tacimates interesset
-                    has ei, pro ignota prodesset at. Vel ea velit
-                    percipitur.
-                </p>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <span class="bigmenu__title">1st Collections</span>
-                    </li>
-                    <li>
-                        <a href="#">Book</a>
-                    </li>
-                    <li>
-                        <a href="#">Health & Beatuty</a>
-                    </li>
-                    <li>
-                        <a href="#">Homelife</a>
-                    </li>
-                    <li>
-                        <a href="#">Home Appliances</a>
-                    </li>
-                    <li>
-                        <a href="#">Smartphones & Cell Phones</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <span class="bigmenu__title">2nd Collections</span>
-                    </li>
-                    <li>
-                        <a href="#">Camera - Camcorder</a>
-                    </li>
-                    <li>
-                        <a href="#">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="#">Kids & Baby</a>
-                    </li>
-                    <li>
-                        <a href="#">Toy and Gift</a>
-                    </li>
-                    <li>
-                        <a href="#">Stationery</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <span class="bigmenu__title">Pages</span>
-                    </li>
-                    <li>
-                        <a href="#">All Collections</a>
-                    </li>
-                    <li>
-                        <a href="#">All Products</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#">Wishlist</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
 
 </section>
 
