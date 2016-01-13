@@ -230,7 +230,7 @@ h6 {
   background-color: #F0F0F0;
   padding: 8px 0 3px 0;
   color: dimgrey;
-  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: "ProximaNova";
   font-size: 14px;
   font-weight: 300;
 }
@@ -256,6 +256,9 @@ h6 {
 .promo__carousel {
   position: relative;
   top: 400px;
+}
+.logo__img {
+  cursor: pointer;
 }
 .copyright__descr {
   font-family: 'proxima_nova_rgregular', sans-serif;
@@ -392,6 +395,9 @@ h6 {
   cursor: pointer;
   margin: 0 5px;
 }
+.item-opt__list {
+  text-align: right;
+}
 .item-opt__el {
   display: inline-block;
   padding: 0 8px;
@@ -402,6 +408,7 @@ h6 {
 }
 .item-opt__ico {
   color: #fa5555;
+  font-size: 20px;
 }
 .item-opt__text {
   font-size: 12px;
@@ -418,8 +425,35 @@ h6 {
   position: absolute;
   left: 50px;
 }
-.header {
+.wrapper {
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: "ProximaNova";
+  color: dimgrey;
+}
+.container {
+  width: 1180px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.top-line {
   background-color: #F0F0F0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.top-menu__flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header {
+  background-color: #ffffff;
+  padding: 25px 0;
 }
 .header__flex {
   display: -webkit-flex;
@@ -431,13 +465,18 @@ h6 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.wrapper {
-  margin: 0 auto;
+.header__left {
+  width: 25%;
 }
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
+.header__center {
+  width: 50%;
+}
+.header__right {
+  width: 25%;
 }
 .general-menu {
   background-color: #F55751;
@@ -886,10 +925,10 @@ h6 {
   background-color: #fff;
   position: relative;
   font-size: 14px;
-  cursor: pointer;
   text-transform: uppercase;
   color: dimgrey;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
 }
 .search__field {
   width: 100%;
@@ -969,10 +1008,6 @@ h6 {
 }
 .collection-title__text:hover {
   color: #fa5555;
-}
-body {
-  font-family: "ProximaNova";
-  color: dimgrey;
 }
 a {
   color: dimgrey;

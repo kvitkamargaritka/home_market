@@ -4,14 +4,396 @@
     <meta charset="UTF-8">
     <title>home-market</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="fonts/ProximaNova-Regular.otf" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,
+                300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet'
+          type='text/css'>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="build/app.css"/>
 
-    <script src="build/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="build/js/app.js"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
 </head>
 <body>
+
+<div class="wrapper">
+
+    <div class="top-line">
+        <div class="top-menu container">
+            <div class="top-menu__flex">
+                <div class="top-menu__left">
+                    <div class="welcome">
+                    <span class="welcome__text">
+                        Default Welcome Msg!
+                    </span>
+                    </div>
+                </div>
+                <div class="top-menu__right">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-twitter-square">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-facebook-square">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-google-plus-square">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-pinterest-square">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-youtube-square">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__el">
+                                <a href="#" class="social__link">
+                                    <i class="social__ico
+                                      fa
+                                      fa-vimeo-square">
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- social end -->
+                    <div class="currency">
+                        <label>
+                            <select class="currency__item">
+                                <option value="USD" selected>USD</option>
+                                <option value="INR">INR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CAD">CAD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="JPY">JPY</option>
+                            </select>
+                        </label>
+                    </div><!-- end currency -->
+                </div><!-- end top-menu__right -->
+            </div><!-- end top-menu__flex -->
+        </div><!-- end top-menu -->
+    </div><!--top-line end -->
+
+    <div class="header container">
+        <div class="header__flex">
+            <div class="header__left">
+                <div class="logo">
+                    <img class="logo__img"
+                         src="src/img/logo.png"
+                         alt="logo"/>
+                </div>
+            </div>
+            <div class="header__center">
+                <div class="search">
+                    <form class="search__general" action="#">
+                        <div class="search__category">
+                            <select class="search__select">
+                                <option value="all collection" selected>
+                                    all collections
+                                </option>
+                                <option value="Beauty & Health">
+                                    Beauty & Health
+                                </option>
+                                <option value="Book">
+                                    Book
+                                </option>
+                                <option value="Camera">
+                                    Camera - Camcorder
+                                </option>
+                                <option value="Clothing">
+                                    Clothing
+                                </option>
+                                <option value="Home Appliances">
+                                    Home Appliances
+                                </option>
+                                <option value="Homelife">
+                                    Homelife
+                                </option>
+                                <option value="Kids & Baby">
+                                    Kids & Baby
+                                </option>
+                                <option value="Smartphones & Cell Phones">
+                                    Smartphones & Cell Phones
+                                </option>
+                                <option value="Sport & Outdoor">
+                                    Sport & Outdoor
+                                </option>
+                                <option value="Stationery">
+                                    Stationery
+                                </option>
+                            </select>
+                        </div><!-- search__select end -->
+
+                        <div class="search__field">
+                            <div class="input input__search">
+                                <input class="input__el"
+                                       type="search"
+                                       placeholder="Search our store"/>
+                            </div>
+                        </div><!-- search__field end -->
+
+                        <div class="search__action">
+                            <button class="btn btn_search">
+                                <i class="search__ico fa fa-search"></i>
+                            </button>
+                        </div><!-- search__action end -->
+                    </form>
+                </div><!-- search end -->
+            </div>
+            <div class="header__right">
+                <div class="item-opt">
+                    <ul class="item-opt__list">
+                        <li class="item-opt__el">
+                            <i class="item-opt__ico
+                              fa
+                              fa-map-marker">
+                            </i>
+                            <p class="item-opt__text">
+                                Store Location
+                            </p>
+                        </li>
+                        <li class="item-opt__el">
+                            <i class="item-opt__ico
+                              fa
+                              fa-user">
+                            </i>
+                            <p class="item-opt__text">
+                                My Account
+                            </p>
+                        </li>
+                        <li class="item-opt__el">
+                            <i class="item-opt__ico
+                              fa fa-shopping-basket">
+                            </i>
+                            <span class="item-opt__counter">0</span>
+                            <p class="item-opt__text">
+                                Shopping Cart
+                            </p>
+                        </li>
+                    </ul>
+                </div><!-- item-opt end -->
+            </div><!-- end header__right -->
+        </div><!-- end header__flex -->
+    </div><!-- end header -->
+    <nav class="nav">
+        <div class="general-menu">
+            <div class="container">
+                <ul class="general-menu__list">
+                    <li class="general-menu__el">
+                        <a class="general-menu__link general-menu__link_active">
+                            home
+                        </a>
+                    </li>
+                    <li class="general-menu__el general-menu__el_collection">
+                        <a class="general-menu__link" href="#">
+                            <span class="collection__text">
+                                collections
+                                <i class="general-menu__ico fa fa-caret-down"></i>
+                            </span>
+                        </a>
+                        <!-- general-menu__dropdown_collection -->
+                        <ul class="general-menu__dropdown
+                                   general-menu__dropdown_collection">
+                            <li>
+                                <a href="#">Book</a>
+                            </li>
+                            <li>
+                                <a href="#">Health & Beauty</a>
+                            </li>
+                            <li>
+                                <a href="#">Homelife</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Appliances</a>
+                            </li>
+                            <li>
+                                <a href="#">Smartphones & Cell Phones</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Kids & Baby</a>
+                            </li>
+                            <li>
+                                <a href="#">Toy and Gift</a>
+                            </li>
+                            <li>
+                                <a href="#">Stationery</a>
+                            </li>
+                        </ul>
+                        <!-- general-menu__dropdown_collection end -->
+                    </li>
+                    <li class="general-menu__el">
+                        <a class="general-menu__link" href="#">
+                            <span class="general-menu__text">
+                                shop
+                                <i class="general-menu__ico fa fa-caret-down"></i>
+                            </span>
+                        </a>
+                        <span class="badge badge_hot">hot</span>
+
+                        <!-- general-menu__dropdown_bigmenu -->
+                        <ul class="general-menu__dropdown
+                                   general-menu__dropdown_bigmenu">
+                            <li>
+                                <a href="#">
+                                    <img src="src/img/logo-shop.png" alt="#"/>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, quod fabellas
+                                    hendrerit per eu, mea populo epicuri et,
+                                    ea possim numquam mea.
+                                </p>
+                                <p>Duo harum ornatus ponderum an, at ius zril
+                                    menandri praesent. Bonorum tacimates interesset
+                                    has ei, pro ignota prodesset at. Vel ea velit
+                                    percipitur.
+                                </p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">
+                                            1st Collections
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Book</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Health & Beatuty</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Homelife</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Appliances</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Smartphones & Cell Phones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">2nd Collections</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Camera - Camcorder</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kids & Baby</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Toy and Gift</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stationery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span class="bigmenu__title">Pages</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">All Collections</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">All Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- general-menu__dropdown_bigmenu end -->
+                    </li>
+                    <li class="general-menu__el">
+                        <a class="general-menu__link" href="#">
+                            <span class="general-menu__text">
+                                today's deals
+                            </span>
+                        </a>
+                        <span class="badge badge_sale">sale</span>
+                    </li>
+                    <li class="general-menu__el">
+                        <a class="general-menu__link" href="#">
+                            <span class="general-menu__text">
+                                blog
+                            </span>
+                        </a>
+                    </li>
+                    <li class="general-menu__el">
+                        <a class="general-menu__link" href="#">
+                            <span class="general-menu__text">
+                                lookbook
+                            </span>
+                        </a>
+                        <span class="badge badge_new">new</span>
+                    </li>
+                </ul>
+            </div><!-- container end -->
+        </div><!-- general-menu end -->
+    </nav>
+
+    <div class="main">
+
+    </div><!-- end main -->
+    <footer class="footer">
+        <div class="footer__top"></div>
+        <div class="footer__bottom"></div>
+        <div class="footer__row">
+            <div class="footer__col"></div>
+            <div class="footer__col"></div>
+        </div>
+    </footer><!-- end footer -->
+</div>
+
 </body>
 </html>
