@@ -12,6 +12,7 @@
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="build/app.css"/>
 
+    <!-- fotorama -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="build/js/app.js"></script>
@@ -213,15 +214,19 @@
             <div class="container">
                 <ul class="general-menu__list">
                     <li class="general-menu__el">
-                        <a class="general-menu__link general-menu__link_active">
+                        <a class="general-menu__link
+                                  general-menu__link_active">
                             home
                         </a>
                     </li>
-                    <li class="general-menu__el general-menu__el_collection">
+                    <li class="general-menu__el
+                               general-menu__el_collection">
                         <a class="general-menu__link" href="#">
                             <span class="collection__text">
                                 collections
-                                <i class="general-menu__ico fa fa-caret-down"></i>
+                                <i class="general-menu__ico
+                                          fa
+                                          fa-caret-down"></i>
                             </span>
                         </a>
                         <!-- general-menu__dropdown_collection -->
@@ -278,9 +283,9 @@
                                     ea possim numquam mea.
                                 </p>
                                 <p>Duo harum ornatus ponderum an, at ius zril
-                                    menandri praesent. Bonorum tacimates interesset
-                                    has ei, pro ignota prodesset at. Vel ea velit
-                                    percipitur.
+                                    menandri praesent. Bonorum tacimates
+                                    interesset has ei, pro ignota prodesset
+                                    at. Vel ea velit percipitur.
                                 </p>
                             </li>
                             <li>
@@ -310,7 +315,9 @@
                             <li>
                                 <ul>
                                     <li>
-                                        <span class="bigmenu__title">2nd Collections</span>
+                                        <span class="bigmenu__title">
+                                            2nd Collections
+                                        </span>
                                     </li>
                                     <li>
                                         <a href="#">Camera - Camcorder</a>
@@ -332,7 +339,9 @@
                             <li>
                                 <ul>
                                     <li>
-                                        <span class="bigmenu__title">Pages</span>
+                                        <span class="bigmenu__title">
+                                            Pages
+                                        </span>
                                     </li>
                                     <li>
                                         <a href="#">All Collections</a>
@@ -382,9 +391,213 @@
         </div><!-- general-menu end -->
     </nav>
 
-    <div class="main">
+    <div class="main container">
+        <div class="main__row">
+            <div class="main__col">
+                <div class="sidebar">
+                    <h6 class="sidebar__title">
+                        <i class="sidebar__ico
+                          fa fa-list">
+                        </i>
+                        all collections
+                    </h6>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_book"></i>
+                                <span class="sidebar__name
+                                             sidebar__name_arrow">
+                                    Book (7)
+                                </span>
+                                <i class="sidebar__ico-arrow
+                                  fa fa-caret-right">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_brush"></i>
+                                <span class="sidebar__name">
+                                    Beauty & Health (6)
+                                </span>
+                                <i class="sidebar__ico-arrow
+                                  fa fa-caret-right">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_homelife"></i>
+                                <span class="sidebar__name">
+                                    Homelife (8)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_fan"></i>
+                                <span class="sidebar__name">
+                                    Home Appliances (8)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_gadgets"></i>
+                                <span class="sidebar__name">
+                                    Smartphones & Cell Phones (9)
+                                </span>
+                                <i class="sidebar__ico-arrow
+                                  fa fa-caret-right">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_camera"></i>
+                                <span class="sidebar__name">
+                                    Camera - Camcorde (7)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_clothing"></i>
+                                <span class="sidebar__name">
+                                    Clothing (6)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_kids"></i>
+                                <span class="sidebar__name">
+                                    Kids & Baby (6)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_ball"></i>
+                                <span class="sidebar__name">
+                                    Sport & Outdoor (6)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__el">
+                            <a class="sidebar__link" href="#">
+                                <i class="ico ico_calendar"></i>
+                                <span class="sidebar__name">
+                                    Stationery (15)
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- end sidebar -->
+            </div><!-- end main__col -->
+            <div class="main__col">
+                <div class="promo">
+                    <div class="promo__carousel">
+                        <div class="carousel">
+                            <div>
+                                <div class="advert">
+                                    <div class="advert__left">
+                                        <img class="advert__img"
+                                             src="src/img/slideshow_01.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="advert__right">
+                                        <span class="advert__title">
+                                            Opening celebration 7th store
+                                        </span>
+                                        <span class="advert__description">
+                                            Sale up to 70% from Nov 1, 2015
+                                            to Nov 7, 2015
+                                        </span>
+                                    </div>
+                                </div><!-- advert end -->
+                            </div>
 
+                            <div>
+                                <div class="advert">
+                                    <div class="advert__left">
+                                        <img class="advert__img"
+                                             src="src/img/slideshow_02.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="advert__right">
+                                        <span class="advert__title">
+                                            Beautiful woman 2015
+                                        </span>
+                                        <span class="advert__description">
+                                            high-end products cosmetics &
+                                            mackup
+                                        </span>
+                                    </div>
+                                </div><!-- advert end -->
+                            </div>
+
+                            <div>
+                                <div class="advert">
+                                    <div class="advert__left">
+                                        <img class="advert__img"
+                                             src="src/img/slideshow_03.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="advert__right">
+                                        <span class="advert__title">
+                                            Sony Xperia Z5
+                                        </span>
+                                        <span class="advert__description">
+                                            buy now only today sale 60% for
+                                            all colour
+                                        </span>
+                                    </div>
+                                </div><!-- advert end -->
+                            </div>
+
+                            <div>
+                                <div class="advert">
+                                    <div class="advert__left">
+                                        <img class="advert__img"
+                                             src="src/img/slideshow_04.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="advert__right">
+                                        <span class="advert__title">
+                                            New Lego collection
+                                        </span>
+                                        <span class="advert__description">
+                                            best seller 2015
+                                        </span>
+                                    </div>
+                                </div><!-- advert end -->
+                            </div>
+
+                            <div>
+                                <div class="advert">
+                                    <div class="advert__left">
+                                        <img class="advert__img"
+                                             src="src/img/slideshow_05.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="advert__right">
+                                        <span class="advert__title">
+                                            Christmas 2015
+                                        </span>
+                                        <span class="advert__description">
+                                            Merry Christmas
+                                        </span>
+                                    </div>
+                                </div><!-- advert end -->
+                            </div>
+                        </div><!-- carousel end -->
+                    </div><!-- promo__carousel end -->
+                </div><!-- promo end -->
+            </div><!-- end main__col -->
+        </div><!-- end main__row -->
     </div><!-- end main -->
+
     <footer class="footer">
         <div class="footer__top"></div>
         <div class="footer__bottom"></div>
@@ -393,7 +606,7 @@
             <div class="footer__col"></div>
         </div>
     </footer><!-- end footer -->
-</div>
+</div><!-- end wrapper -->
 
 </body>
 </html>

@@ -478,6 +478,18 @@ h6 {
 .header__right {
   width: 25%;
 }
+.main__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px 0;
+}
 .general-menu {
   background-color: #F55751;
   border-top: 1px solid #e5e5e5;
@@ -587,7 +599,7 @@ h6 {
   font-size: 25px;
 }
 .sidebar {
-  width: 272px;
+  width: 274px;
   border: 1px solid #E8E8E8;
 }
 .sidebar__title {
