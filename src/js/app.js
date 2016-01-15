@@ -8,8 +8,9 @@ $(function() {
     //ratio: 16/9,
     //allowfullscreen: true,
     nav: 'dots',
-    //autoplay: true,
+    autoplay: true
   });
+
 /** end Fotorama **/
 
 /** slick **/
@@ -18,21 +19,18 @@ $(function() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    variableWidth: true
+  });
+
+  $('.carousel-item').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     variableWidth: true,
+    autoplay: true
   });
 
 /** end slick **/
-
-  //var elements = $('.general-menu__link');
-  //
-  //elements.each(function (index, el) {
-  //  $(el).hover(function () {
-  //    $(this).parent().find('.general-menu__dropdown').slideToggle('slow');
-  //    //$(this).parent().find('.general-menu__dropdown').slideDown();
-  //    //$(this).parent().find('.general-menu__dropdown').slideUp();
-  //  })
-  //});
-
 
 });
 

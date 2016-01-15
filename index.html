@@ -9,6 +9,8 @@
                 300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet'
           type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="build/app.css"/>
 
@@ -18,8 +20,6 @@
     <script src="build/js/app.js"></script>
 
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 
 </head>
@@ -32,9 +32,9 @@
             <div class="top-menu__flex">
                 <div class="top-menu__left">
                     <div class="welcome">
-                    <span class="welcome__text">
-                        Default Welcome Msg!
-                    </span>
+                        <span class="welcome__text">
+                            Default Welcome Msg!
+                        </span>
                     </div>
                 </div>
                 <div class="top-menu__right">
@@ -89,7 +89,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- social end -->
+                    </div><!--  end social-->
                     <div class="currency">
                         <label>
                             <select class="currency__item">
@@ -106,7 +106,7 @@
                 </div><!-- end top-menu__right -->
             </div><!-- end top-menu__flex -->
         </div><!-- end top-menu -->
-    </div><!--top-line end -->
+    </div><!-- end top-line-->
 
     <div class="header container">
         <div class="header__flex">
@@ -413,6 +413,9 @@
                                   fa fa-caret-right">
                                 </i>
                             </a>
+                            <ul class="sidebar__dropdown">
+                                <li></li>
+                            </ul>
                         </li>
                         <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
@@ -536,7 +539,6 @@
                                     </div>
                                 </div><!-- advert end -->
                             </div>
-
                             <div>
                                 <div class="advert">
                                     <div class="advert__left">
@@ -555,7 +557,6 @@
                                     </div>
                                 </div><!-- advert end -->
                             </div>
-
                             <div>
                                 <div class="advert">
                                     <div class="advert__left">
@@ -573,7 +574,6 @@
                                     </div>
                                 </div><!-- advert end -->
                             </div>
-
                             <div>
                                 <div class="advert">
                                     <div class="advert__left">
@@ -596,10 +596,978 @@
                 </div><!-- promo end -->
             </div><!-- end main__col -->
         </div><!-- end main__row -->
+
+        <div class="main__row">
+            <div class="menu-collection container">
+                <div class="menu-collection__left">
+                    <div class="menu-collection__name">
+                        <img class="menu-collection__img"
+                             src="src/img/beauty-health.png"
+                             alt="#"/>
+                        <a class="menu-collection__link" href="#">
+                            <span class="menu-collection__text">
+                                Beauty & Health
+                            </span>
+                       </a>
+                    </div>
+                </div>
+                <div class="menu-collection__right">
+                    <ul class="menu-collection__list">
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Makeup
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Body Care
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Skin Care
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Hair Care
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Perfumes
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                See All
+                            </span>
+                        </li>
+                    </ul>
+                </div><!-- end menu-collection__right-->
+            </div><!-- end menu-collection-->
+        </div><!-- end main__row-->
+
+        <div class="main__row">
+            <div class="main__col">
+                <div class="slideshow">
+                    <div class="fotorama">
+                        <img src="src/img/slide_1.jpg" alt="#"/>
+                        <img src="src/img/slide_2.jpg" alt="#"/>
+                    </div>
+                </div>
+            </div>
+            <div class="main__col">
+                <div class="brands">
+                    <ul class="brands__list">
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_1.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_2.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_3.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_4.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_5.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_6.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_7.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_8.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- end brands -->
+            </div><!-- end main__col -->
+        </div><!-- end main__row -->
+
+        <div class="main__row">
+            <div class="main__col">
+                <div class="spotlight">
+                    <div class="spotlight__line"></div>
+                    <span class="spotlight__text">
+                        spotlight
+                    </span>
+                </div>
+                <div class="goods">
+                    <div class="goods__carousel">
+                        <div class="carousel-item">
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_1.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                etiam lobortis purus dictum
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $67.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico fa fa-bars"></i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_2.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Cras in nunc ipsum
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            from $19.99
+                                        </span>
+                                        <span class="item__price
+                                                     item__price_old">
+                                            $24.99
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-bars">
+                                            </i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_3.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Corporis suscipit laboriosam
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $89.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-shopping-cart">
+                                            </i>
+                                            buy now
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_4.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Consequuntur magni dolores
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            from $19.99
+                                        </span>
+                                        <span class="item__price
+                                                     item__price_old">
+                                            $24.99
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-shopping-cart">
+                                            </i>
+                                            buy now
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_5.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Example T-Shirt
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            from $19.99
+                                        </span>
+                                        <span class="item__price
+                                                     item__price_old">
+                                            $24.99
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-bars">
+                                            </i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- end item -->
+                            </div>
+                        </div><!-- end carousel-item -->
+                    </div><!-- end goods__carousel -->
+                </div><!-- end goods -->
+            </div><!-- end main__col -->
+            <div class="main__col">
+                <div class="banner">
+                    <img class="banner__img"
+                         src="src/img/promo_1.png"
+                         alt="#"/>
+                </div>
+            </div>
+        </div><!-- end main__row -->
+
+        <div class="main__row">
+            <div class="menu-collection container">
+                <div class="menu-collection__left">
+                    <div class="menu-collection__name">
+                        <img class="menu-collection__img"
+                             src="src/img/smartphones.png"
+                             alt="#"/>
+                        <a class="menu-collection__link" href="#">
+                            <span class="menu-collection__text">
+                                Smartphones & cell phones
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-collection__right">
+                    <ul class="menu-collection__list">
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                iOS
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Android
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Windows Phone
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                BlackBerry
+                            </span>
+                        </li>
+                        <li class="menu-collection__el">
+                            <span class="menu-collection__item">
+                                Firefox OS
+                            </span>
+                        </li>
+                        <li class="menu-collection__el menu-collection__el_arrow">
+                            <span class="menu-collection__item">
+                                See All
+                            </span>
+                        </li>
+                    </ul>
+                </div><!-- end menu-collection__right-->
+            </div><!-- end menu-collection-->
+        </div><!-- end main__row-->
+
+        <div class="main__row">
+            <div class="main__col">
+                <div class="slideshow">
+                    <div class="fotorama">
+                        <img src="src/img/slide_3.jpg" alt="#"/>
+                        <img src="src/img/slide_4.jpg" alt="#"/>
+                    </div>
+                </div>
+            </div>
+            <div class="main__col">
+                <div class="brands">
+                    <ul class="brands__list">
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_1.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_2.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_3.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_4.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_5.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_6.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_7.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                        <li class="brands__el">
+                            <a class="brands__link" href="#">
+                                <img class="brands__img"
+                                     src="src/img/brand_8.png"
+                                     alt="#"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- end brands -->
+            </div><!-- end main__col -->
+        </div><!-- end main__row -->
+
+        <div class="main__row">
+            <div class="main__col">
+                <div class="spotlight">
+                    <div class="spotlight__line"></div>
+                    <span class="spotlight__text">
+                        spotlight
+                    </span>
+                </div>
+                <div class="goods">
+                    <div class="goods__carousel">
+                        <div class="carousel-item">
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_6.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Etiam dan lorem quis
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $100.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico fa fa-bars"></i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_7.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Etiam dan lorem quis
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $100.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-bars">
+                                            </i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_8.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                                 <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Etiam dan lorem quis
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $100.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-shopping-cart">
+                                            </i>
+                                            buy now
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_9.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Etiam dan lorem quis
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $100.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-shopping-cart">
+                                            </i>
+                                            buy now
+                                        </button>
+                                    </div>
+                                </div><!-- item end -->
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item__top">
+                                        <img class="item__img"
+                                             src="src/img/item_10.jpg"
+                                             alt="#"/>
+                                    </div>
+                                    <div class="item__center">
+                                        <div class="rating-star">
+                                            <span class="rating-star__badge">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                        <a class="item__link" href="#">
+                                            <h6 class="item__title">
+                                                Etiam dan lorem quis
+                                            </h6>
+                                        </a>
+                                        <span class="item__price">
+                                            $100.00
+                                        </span>
+                                    </div><!-- end item__center -->
+                                    <div class="item__bottom">
+                                        <input type="hidden"/>
+                                        <button class="btn btn_opts">
+                                            <i class="btn__ico
+                                                      fa fa-bars">
+                                            </i>
+                                            options
+                                        </button>
+                                    </div>
+                                </div><!-- end item -->
+                            </div>
+                        </div><!-- end carousel-item -->
+                    </div><!-- end goods__carousel -->
+                </div><!-- end goods -->
+            </div>
+            <div class="main__col">
+                <div class="banner">
+                    <img class="banner__img"
+                         src="src/img/promo_1.png"
+                         alt="#"/>
+                </div>
+            </div>
+        </div><!-- end main__row -->
     </div><!-- end main -->
 
-    <footer class="footer">
-        <div class="footer__top"></div>
+    <section class="newsletter">
+        <div class="subscribe-line">
+            <div class="subscribe container">
+                <div class="subscribe__flexbox">
+                    <h3 class="subscribe__text">
+                        <i class="subscribe__ico fa fa-envelope"></i>
+                        Make sure you don't miss interesting happenings
+                        by joining our newsletter program
+                    </h3>
+                    <form action="#">
+                        <input class="input__email"
+                               type="email"
+                               placeholder="Enter your email ..."/>
+                        <button class="btn btn_subscribe">
+                            subscribe
+                        </button>
+                    </form>
+                </div><!-- end subscribe__flexbox -->
+            </div><!-- subscribe end -->
+        </div><!-- end subscribe-line -->
+    </section>
+
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__col">
+                <div class="contacts">
+                    <h6 class="contacts__title">about us</h6>
+                    <ul class="contacts__list">
+                        <li class="contacts__el">
+                            <i class="contacts__ico
+                              fa fa-map-marker">
+                            </i>
+                            <span class="contacts__text">
+                                474 Ontario St Toronto, ON M4X 1M7 Canada
+                            </span>
+                        </li>
+                        <li class="contacts__el">
+                            <i class="contacts__ico
+                              fa fa-phone">
+                            </i>
+                            <span class="contacts__text">
+                                (+1234)56789xxx
+                            </span>
+                        </li>
+                        <li class="contacts__el">
+                            <i class="contacts__ico
+                              fa fa-envelope">
+                            </i>
+                            <span class="contacts__text">
+                                tadathemes@gmail.com
+                            </span>
+                        </li>
+                    </ul>
+                </div><!-- contacts end -->
+            </div>
+            <div class="footer__col">
+                <div class="vertical-list">
+                    <!--<div class="title">-->
+                    <!--<span class="title__name">-->
+                        <!--information-->
+                    <!--</span>-->
+                    <!--</div>-->
+                    <ul class="vertical-list__item">
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    About us
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Shipping & Returns
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Privacy
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Conditions
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Online support
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="vertical-list__item">
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    My Account
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Order History
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Help & FAQs
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Contact us
+                                </span>
+                            </a>
+                        </li>
+                        <li class="vertical-list__el">
+                            <a class="vertical-list__link" href="#">
+                                <span class="vertical-list__text">
+                                    Manufacturers
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- vertical-list end -->
+            </div>
+            <div class="footer__col">
+                <div class="tags">
+                    <ul class="tags__list">
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                100 - 200
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                200 - 300
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                300 - 400
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                400 - 500
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                BB
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Blue
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Body Care
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Gucci
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Hair Care
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Hamilton
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Mackup
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Omega
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Perfumes
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Red
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Skin Care
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Tissot
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Under 100
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                While
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                Yellow
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                abc
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                bootstrap
+                            </span>
+                        </li>
+                        <li class="tags__el">
+                            <span class="tags__text">
+                                cell phone
+                            </span>
+                        </li>
+                    </ul>
+                </div><!-- tags end -->
+            </div>
+            <div class="footer__col">
+                <div class="post">
+                    <div class="title">
+                        <span class="title__name">
+                            recent post
+                        </span>
+                    </div>
+                    <ul class="post__list">
+                        <li class="post__el">
+                            <div class="post__top">
+                                <a class="post__link" href="#">
+                                    <span class="post__text">
+                                        Quisque porta felis est ut malesuada
+                                        lorem dignissim
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="post__bottom">
+                                <span class="post__autor">
+                                    by <span class="post__autor_red">Tada Theme</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="post__el">
+                            <div class="post__top">
+                                <a class="post__link" href="#">
+                                    <span class="post__text">
+                                        Section 1.10.33 of de Finibus Bonorum et
+                                        Malorum, written by Cicero in 45 BC
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="post__bottom">
+                                <span class="post__autor">
+                                    by <span class="post__autor_red">Tada Theme</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- end post -->
+            </div>
+        </div>
         <div class="footer__bottom"></div>
         <div class="footer__row">
             <div class="footer__col"></div>

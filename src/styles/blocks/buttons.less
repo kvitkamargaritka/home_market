@@ -26,18 +26,23 @@
     }
   }
 
-  &_opts {
+  &_opts,
+  &_buy {
     border: 1px solid #cccccc;
     font-size: 11px;
-    padding: 9px 30px;
+    padding: 9px 18px;
     color: dimgrey;
-    margin-top: 5px;
+    margin-top: 8px;
 
     &:hover {
       background-color: #fa5555;
       color: #ffffff;
       border-color: transparent;
       transition: 0.5s;
+    }
+
+    &:hover .btn-group__hidden {
+      display: block;
     }
   }
 
@@ -48,13 +53,17 @@
     font-size: 11px;
     padding: 8px;
     text-align: center;
+    margin: 0 2px;
 
     &:hover {
       background-color: #fa5555;
       color: #ffffff;
       border-color: transparent;
       transition: 0.5s;
-
     }
+  }
+
+  &__ico {
+    margin-right: 5px;
   }
 }

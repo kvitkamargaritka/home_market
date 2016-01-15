@@ -1,0 +1,49 @@
+.dropdown-book {
+  width: 500px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-transform: uppercase;
+  }
+
+  &__link {
+
+    &:hover {
+      color: #fa5555;
+    }
+
+    &_red {
+      color: #fa5555;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__list {
+    margin: 20px 10px;
+  }
+
+  &__el {
+    padding: 5px 12px 11px 15px;
+  }
+
+  &__product-name {
+    color: #444;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    width: 209px;
+    height: 209px;
+  }
+}

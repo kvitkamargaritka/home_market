@@ -19,26 +19,6 @@
   font-weight: 300;
 }
 
-//spotlight {
-.spotlight {
-
-  &__text {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-    position: relative;
-
-    &:before {
-      content: '';
-      width: 100%;
-      background: #e5e5e5;
-      height: 1px;
-      position: absolute;
-    }
-  }
-}
-
 //promo
 .promo {
   width: 885px;
@@ -86,26 +66,10 @@
   }
 }
 
-//subscribe
-.subscribe {
-  background: #fa5555;
-  height: 62px;
-  line-height: 62px;
-
-  &__text {
-    font-weight: 700;
-    color: #ffffff;
-    margin: 5px 10px 0 0;
-  }
-
-  &__ico {
-    margin-right: 6px;
-    font-size: 20px;
-  }
-
-  &__flexbox {
-    display: inline-flex;
-  }
+//slideshow
+.slideshow {
+  position: relative;
+  top: -3px;
 }
 
 //bigmenu
@@ -118,6 +82,56 @@
     text-transform: uppercase;
   }
 }
+
+.collection-blog {
+  border: 1px solid #e5e5e5;
+}
+
+//goods
+.goods {
+  width: 875px;
+  &__carousel {
+
+  }
+}
+
+//banner
+.banner {
+
+  &__img {
+    width: 285px;
+    height: 343px;
+  }
+}
+
+//btn-group
+.btn-group {
+  display: inline-block;
+  position: relative;
+
+  &__hidden {
+    position: absolute;
+    top: 6px;
+    right: -79px;
+    display: none;
+  }
+
+  &:hover .btn-group__hidden {
+    display: block;
+  }
+}
+
+.subscribe-line {
+  background-color: #F55751;
+}
+
+.slick {
+  &-prev {
+    left: -5px;
+    right: 0;
+  }
+}
+
 
 
 
