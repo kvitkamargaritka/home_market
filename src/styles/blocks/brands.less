@@ -1,8 +1,5 @@
 .brands {
   width: 284px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
 
   &__list {
     display: flex;
@@ -15,7 +12,15 @@
     width: 141px;
     border: 1px solid #e5e5e5;
     margin: 0 0 -1px -1px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
 
+    &:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    }
   }
 
   &__link {

@@ -1,14 +1,18 @@
 .vertical-list {
-  display: flex;
-  flex-direction: row;
+  //width: 298px;
 
   &__item {
-    margin-right: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
   }
 
   &__el {
     margin-bottom: 10px;
     padding-top: 4px;
+    margin-right: 37px;
   }
 
   &__link {
