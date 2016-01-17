@@ -1,0 +1,31 @@
+.make-columns(@container-width; @number-cols; @i: 1) when (@i =< @number-cols) {
+
+  .col-@{i} {
+    @single-width: @container-width / @number-cols;
+    width: @i * @single-width;
+    float: left;
+    padding: 0 5px;
+    margin: 0 -5px;
+    box-sizing: border-box !important;
+  }
+
+  .make-columns(@container-width; @number-cols; @i + 1);
+}
+
+.make-offsets(@container-width; @number-cols; @i: 1) when (@i =< @number-cols) {
+
+  .offset-@{i} {
+    @single-width: @container-width / @number-cols;
+    margin-left: @i * @single-width;
+    float: left;
+  }
+
+  .make-offsets(@container-width; @number-cols; @i + 1);
+}
+
+.make-columns(100%, 12);
+.make-offsets(100%, 12);
+
+.row {
+  .clearfix();
+}

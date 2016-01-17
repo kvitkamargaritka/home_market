@@ -214,6 +214,9 @@ h6 {
 .text-right {
   text-align: right;
 }
+.text-left {
+  text-align: left;
+}
 .text-small {
   font-size: 12px;
 }
@@ -282,19 +285,6 @@ h6 {
   width: 285px;
   height: 343px;
 }
-.btn-group {
-  display: inline-block;
-  position: relative;
-}
-.btn-group__hidden {
-  position: absolute;
-  top: 6px;
-  right: -79px;
-  display: none;
-}
-.btn-group:hover .btn-group__hidden {
-  display: block;
-}
 .subscribe-line {
   background-color: #F55751;
 }
@@ -331,7 +321,6 @@ h6 {
   font-size: 11px;
   padding: 9px 18px;
   color: dimgrey;
-  margin-top: 8px;
 }
 .btn_opts:hover,
 .btn_buy:hover {
@@ -349,9 +338,10 @@ h6 {
   border: 1px solid #cccccc;
   color: dimgrey;
   font-size: 11px;
-  padding: 8px;
+  padding: 9px;
   text-align: center;
   margin: 0 2px;
+  position: relative;
 }
 .btn_heart:hover,
 .btn_mail:hover {
@@ -362,6 +352,23 @@ h6 {
 }
 .btn__ico {
   margin-right: 5px;
+}
+.btn-group {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 10px;
+}
+.btn-group__hidden {
+  margin-left: 3px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 0;
+  transition: 0.1s;
+}
+.btn-group:hover .btn-group__hidden {
+  opacity: 100;
 }
 .social {
   display: -webkit-inline-flex;
@@ -501,14 +508,6 @@ h6 {
           justify-content: space-between;
   margin: 15px 0;
 }
-.footer__col {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
 .newsletter {
   background-color: #F55751;
   margin: 20px 0;
@@ -517,6 +516,8 @@ h6 {
   background-color: #F55751;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+  font-family: 'Lato';
+  font-size: 14px;
 }
 .general-menu__list {
   display: -webkit-inline-flex;
@@ -535,14 +536,11 @@ h6 {
   left: 71px;
 }
 .general-menu__link {
-  padding: 17px 25px;
   display: block;
-  text-decoration: none;
-  font-family: 'Lato';
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 300;
+  padding: 17px 25px;
   color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
   position: relative;
 }
 .general-menu__link:hover {
@@ -636,6 +634,12 @@ h6 {
 .sidebar__el {
   padding: 11px 21px 12px 20px;
   border-bottom: 1px solid #E8E8E8;
+  position: relative;
+}
+.sidebar__el_book:hover .sidebar__drop-down,
+.sidebar__el_beauty:hover .sidebar__drop-down,
+.sidebar__el_smartphones:hover .sidebar__drop-down {
+  visibility: visible;
 }
 .sidebar__ico {
   margin-right: 10px;
@@ -659,6 +663,9 @@ h6 {
 }
 .sidebar__name:hover {
   color: #fa5555;
+}
+.sidebar__drop-down {
+  visibility: hidden;
 }
 .advert {
   display: -webkit-flex;
@@ -915,6 +922,9 @@ h6 {
 }
 .brands {
   width: 284px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .brands__list {
   display: -webkit-flex;
@@ -1191,7 +1201,151 @@ h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-.dropdown-book {
+.col-1 {
+  width: 8.33333333%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-2 {
+  width: 16.66666667%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-4 {
+  width: 33.33333333%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-5 {
+  width: 41.66666667%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-7 {
+  width: 58.33333333%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-8 {
+  width: 66.66666667%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-10 {
+  width: 83.33333333%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-11 {
+  width: 91.66666667%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.col-12 {
+  width: 100%;
+  float: left;
+  padding: 0 5px;
+  margin: 0 -5px;
+  box-sizing: border-box !important;
+}
+.offset-1 {
+  margin-left: 8.33333333%;
+  float: left;
+}
+.offset-2 {
+  margin-left: 16.66666667%;
+  float: left;
+}
+.offset-3 {
+  margin-left: 25%;
+  float: left;
+}
+.offset-4 {
+  margin-left: 33.33333333%;
+  float: left;
+}
+.offset-5 {
+  margin-left: 41.66666667%;
+  float: left;
+}
+.offset-6 {
+  margin-left: 50%;
+  float: left;
+}
+.offset-7 {
+  margin-left: 58.33333333%;
+  float: left;
+}
+.offset-8 {
+  margin-left: 66.66666667%;
+  float: left;
+}
+.offset-9 {
+  margin-left: 75%;
+  float: left;
+}
+.offset-10 {
+  margin-left: 83.33333333%;
+  float: left;
+}
+.offset-11 {
+  margin-left: 91.66666667%;
+  float: left;
+}
+.offset-12 {
+  margin-left: 100%;
+  float: left;
+}
+.row {
+  display: block;
+  zoom: 1;
+}
+.row:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.drop-down {
   width: 500px;
   border: 1px solid #ccc;
   background: #ffffff;
@@ -1204,34 +1358,38 @@ h6 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  top: -1px;
+  left: 275px;
+  z-index: 1;
 }
-.dropdown-book__title {
+.drop-down__title {
   font-size: 18px;
   font-weight: 700;
   color: #2c2c2c;
   text-transform: uppercase;
 }
-.dropdown-book__link:hover {
+.drop-down__link:hover {
   color: #fa5555;
 }
-.dropdown-book__link_red {
+.drop-down__link_red {
   color: #fa5555;
 }
-.dropdown-book__link_red:hover {
+.drop-down__link_red:hover {
   text-decoration: underline;
 }
-.dropdown-book__list {
+.drop-down__list {
   margin: 20px 10px;
 }
-.dropdown-book__el {
+.drop-down__el {
   padding: 5px 12px 11px 15px;
 }
-.dropdown-book__product-name {
+.drop-down__text {
   color: #444;
   font-weight: 700;
   text-transform: uppercase;
 }
-.dropdown-book__img {
+.drop-down__img {
   width: 209px;
   height: 209px;
 }

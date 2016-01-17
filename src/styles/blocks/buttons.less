@@ -32,7 +32,6 @@
     font-size: 11px;
     padding: 9px 18px;
     color: dimgrey;
-    margin-top: 8px;
 
     &:hover {
       background-color: #fa5555;
@@ -51,9 +50,10 @@
     border: 1px solid #cccccc;
     color: dimgrey;
     font-size: 11px;
-    padding: 8px;
+    padding: 9px;
     text-align: center;
     margin: 0 2px;
+    position: relative;
 
     &:hover {
       background-color: #fa5555;
@@ -65,5 +65,22 @@
 
   &__ico {
     margin-right: 5px;
+  }
+}
+
+//btn-group
+.btn-group {
+  display: inline-flex;
+  margin-top: 10px;
+
+  &__hidden {
+    margin-left: 3px;
+    display: inline-flex;
+    opacity: 0;
+    transition: 0.1s;
+  }
+
+  &:hover .btn-group__hidden {
+    opacity: 100;
   }
 }
