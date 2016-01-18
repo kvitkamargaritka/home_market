@@ -19,7 +19,8 @@ $(function() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: true
+    variableWidth: true,
+
   });
 
   $('.carousel-item').slick({

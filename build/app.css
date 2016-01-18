@@ -277,6 +277,9 @@ h6 {
 .collection-blog {
   border: 1px solid #e5e5e5;
 }
+.carousel:focus {
+  outline: none;
+}
 .banner__img {
   height: 343px;
 }
@@ -286,6 +289,9 @@ h6 {
 .slick-prev {
   left: -5px;
   right: 0;
+}
+.slick-slide:focus {
+  outline: none;
 }
 .btn {
   background-color: #ffffff;
@@ -407,6 +413,10 @@ h6 {
   -webkit-appearance: none;
   cursor: pointer;
   margin: 0 5px;
+  background-color: #F0F0F0;
+}
+.currency__item:focus {
+  outline: none;
 }
 .item-opt__list {
   text-align: right;
@@ -615,6 +625,7 @@ h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 10px;
+  cursor: pointer;
 }
 .payments__el:hover .payments__ico {
   color: #fa5555;
@@ -675,13 +686,13 @@ h6 {
   display: flex;
   width: 252px;
   padding: 10px 20px;
-  background-color: #F3F0EC;
+  background-color: #f2f2f2;
   border: 1px solid #d7d7d7;
   opacity: 0.8;
   cursor: pointer;
 }
 .advert:hover {
-  background-color: #f2f2f2;
+  opacity: 1;
 }
 .advert__img {
   max-width: 50px;
@@ -970,12 +981,18 @@ h6 {
   font-weight: 300;
   padding-left: 10px;
 }
+.input__el:focus {
+  outline: none;
+}
 .input__email {
   width: 351px;
   height: 30px;
   border: none;
   margin-right: 15px;
   padding-left: 10px;
+}
+.input__email:focus {
+  outline: none;
 }
 .search {
   display: -webkit-inline-flex;
@@ -1000,10 +1017,13 @@ h6 {
   background-color: #fff;
   position: relative;
   font-size: 14px;
+  cursor: pointer;
   text-transform: uppercase;
   color: dimgrey;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
+}
+.search__select:focus {
+  outline: none;
 }
 .search__field {
   width: 100%;
@@ -1161,6 +1181,7 @@ h6 {
   font-family: "ProximaNova";
   font-size: 14px;
   font-weight: 400;
+  cursor: pointer;
 }
 .menu-collection__item:hover {
   color: #fa5555;
@@ -1369,6 +1390,7 @@ h6 {
   position: absolute;
   top: -1px;
   left: 284px;
+  font-size: 13px;
   z-index: 1;
 }
 .drop-down__title {
@@ -1404,4 +1426,7 @@ h6 {
 a {
   color: dimgrey;
   text-decoration: none;
+}
+a:focus {
+  outline: none;
 }
