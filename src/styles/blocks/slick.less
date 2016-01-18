@@ -1,0 +1,28 @@
+.slick {
+
+  &-prev {
+    left: 2px;
+
+    &:before {
+      content: '←';
+      color: #ccc;
+      font-size: 22px;
+    }
+  }
+
+  &-next {
+    right: 1px;
+
+    &:before {
+      content: '→';
+      color: #ccc;
+      font-size: 22px;
+    }
+  }
+
+  &-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+}

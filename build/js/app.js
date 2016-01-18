@@ -33,4 +33,23 @@ $(function() {
 
 /** end slick **/
 
+/** drop-down **/
+
+  $('.sidebar__el').mouseover (function () {
+    $(this).children('.drop-down').stop().show(100);
+    $(this).children('.drop-down').css('display', 'inline-flex');
+  });
+  $('.sidebar__el').mouseout(function() {
+    $(this).children('.drop-down').stop().hide(100);
+  });
+
+/** end drop-down **/
+
+/** animate **/
+  $('.social__ico').hover(function(){
+    $(this).addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass('animated tada')
+    });
+  });
+/** end animate **/
 });

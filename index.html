@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/animate.css"/>
     <link rel="stylesheet" href="build/app.css"/>
 
     <!-- fotorama -->
@@ -109,105 +110,108 @@
     </div><!-- end top-line-->
 
     <div class="header container">
-        <div class="header__flex">
-            <div class="header__left">
-                <div class="logo">
-                    <img class="logo__img"
-                         src="src/img/logo.png"
-                         alt="logo"/>
+        <div class="header__row">
+            <div class="header__flex">
+                <div class="header__col col-3">
+                    <div class="logo">
+                        <img class="logo__img"
+                             src="src/img/logo.png"
+                             alt="logo"/>
+                    </div>
                 </div>
-            </div>
-            <div class="header__center">
-                <div class="search">
-                    <form class="search__general" action="#">
-                        <div class="search__category">
-                            <select class="search__select">
-                                <option value="all collection" selected>
-                                    all collections
-                                </option>
-                                <option value="Beauty & Health">
-                                    Beauty & Health
-                                </option>
-                                <option value="Book">
-                                    Book
-                                </option>
-                                <option value="Camera">
-                                    Camera - Camcorder
-                                </option>
-                                <option value="Clothing">
-                                    Clothing
-                                </option>
-                                <option value="Home Appliances">
-                                    Home Appliances
-                                </option>
-                                <option value="Homelife">
-                                    Homelife
-                                </option>
-                                <option value="Kids & Baby">
-                                    Kids & Baby
-                                </option>
-                                <option value="Smartphones & Cell Phones">
-                                    Smartphones & Cell Phones
-                                </option>
-                                <option value="Sport & Outdoor">
-                                    Sport & Outdoor
-                                </option>
-                                <option value="Stationery">
-                                    Stationery
-                                </option>
-                            </select>
-                        </div><!-- search__select end -->
+                <div class="header__col col-6">
+                    <div class="search">
+                        <form class="search__general" action="#">
+                            <div class="search__category">
+                                <select class="search__select">
+                                    <option value="all collection" selected>
+                                        all collections
+                                    </option>
+                                    <option value="Beauty & Health">
+                                        Beauty & Health
+                                    </option>
+                                    <option value="Book">
+                                        Book
+                                    </option>
+                                    <option value="Camera">
+                                        Camera - Camcorder
+                                    </option>
+                                    <option value="Clothing">
+                                        Clothing
+                                    </option>
+                                    <option value="Home Appliances">
+                                        Home Appliances
+                                    </option>
+                                    <option value="Homelife">
+                                        Homelife
+                                    </option>
+                                    <option value="Kids & Baby">
+                                        Kids & Baby
+                                    </option>
+                                    <option value="Smartphones & Cell Phones">
+                                        Smartphones & Cell Phones
+                                    </option>
+                                    <option value="Sport & Outdoor">
+                                        Sport & Outdoor
+                                    </option>
+                                    <option value="Stationery">
+                                        Stationery
+                                    </option>
+                                </select>
+                            </div><!-- search__select end -->
 
-                        <div class="search__field">
-                            <div class="input input__search">
-                                <input class="input__el"
-                                       type="search"
-                                       placeholder="Search our store"/>
-                            </div>
-                        </div><!-- search__field end -->
+                            <div class="search__field">
+                                <div class="input input__search">
+                                    <input class="input__el"
+                                           type="search"
+                                           placeholder="Search our store"/>
+                                </div>
+                            </div><!-- search__field end -->
 
-                        <div class="search__action">
-                            <button class="btn btn_search">
-                                <i class="search__ico fa fa-search"></i>
-                            </button>
-                        </div><!-- search__action end -->
-                    </form>
-                </div><!-- search end -->
-            </div>
-            <div class="header__right">
-                <div class="item-opt">
-                    <ul class="item-opt__list">
-                        <li class="item-opt__el">
-                            <i class="item-opt__ico
+                            <div class="search__action">
+                                <button class="btn btn_search">
+                                    <i class="search__ico fa fa-search"></i>
+                                </button>
+                            </div><!-- search__action end -->
+                        </form>
+                    </div><!-- search end -->
+                </div>
+                <div class="header__col col-3">
+                    <div class="item-opt">
+                        <ul class="item-opt__list">
+                            <li class="item-opt__el">
+                                <i class="item-opt__ico
                               fa
                               fa-map-marker">
-                            </i>
-                            <p class="item-opt__text">
-                                Store Location
-                            </p>
-                        </li>
-                        <li class="item-opt__el">
-                            <i class="item-opt__ico
+                                </i>
+                                <p class="item-opt__text">
+                                    Store Location
+                                </p>
+                            </li>
+                            <li class="item-opt__el">
+                                <i class="item-opt__ico
                               fa
                               fa-user">
-                            </i>
-                            <p class="item-opt__text">
-                                My Account
-                            </p>
-                        </li>
-                        <li class="item-opt__el">
-                            <i class="item-opt__ico
+                                </i>
+                                <p class="item-opt__text">
+                                    My Account
+                                </p>
+                            </li>
+                            <li class="item-opt__el">
+                                <i class="item-opt__ico
                               fa fa-shopping-basket">
-                            </i>
-                            <span class="item-opt__counter">0</span>
-                            <p class="item-opt__text">
-                                Shopping Cart
-                            </p>
-                        </li>
-                    </ul>
-                </div><!-- item-opt end -->
-            </div><!-- end header__right -->
-        </div><!-- end header__flex -->
+                                </i>
+                                <span class="item-opt__counter">0</span>
+                                <p class="item-opt__text">
+                                    Shopping Cart
+                                </p>
+                            </li>
+                        </ul>
+                    </div><!-- item-opt end -->
+                </div><!-- end header__right -->
+            </div><!-- end header__flex -->
+        </div>
+
     </div><!-- end header -->
     <nav class="nav">
         <div class="general-menu">
@@ -402,7 +406,7 @@
                         all collections
                     </h6>
                     <ul class="sidebar__list">
-                        <li class="sidebar__el sidebar__el_book">
+                        <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
                                 <i class="ico ico_book"></i>
                                     <span class="sidebar__name
@@ -414,14 +418,12 @@
                                 </i>
                             </a>
 
-                            <div class="sidebar__drop-down">
-                                <div class="drop-down">
+                            <div class="drop-down">
+                                <div class="drop-down__left">
+                                    <h6 class="drop-down__title">
+                                        Usefull links
+                                    </h6>
                                     <ul class="drop-down__list">
-                                        <li class="drop-down__el">
-                                            <h6 class="drop-down__title">
-                                                Usefull links
-                                            </h6>
-                                        </li>
                                         <li class="drop-down__el">
                                             <a class="drop-down__link"
                                                href="#">
@@ -465,12 +467,12 @@
                                             </a>
                                         </li>
                                     </ul>
+                                </div><!-- end drop-down left -->
+                                <div class="drop-down__right">
+                                    <h6 class="drop-down__title">
+                                        New Arrivals
+                                    </h6>
                                     <ul class="drop-down__list">
-                                        <li class="drop-down__el">
-                                            <h6 class="drop-down__title">
-                                                New Arrivals
-                                            </h6>
-                                        </li>
                                         <li class="drop-down__el">
                                             <a class="drop-down__link"
                                                href="#">
@@ -485,17 +487,17 @@
                                             </span>
                                         </li>
                                         <li class="drop-down__el">
-                                            <a class="drop-down__link"
+                                            <a class="drop-down__link
+                                                      drop-down__link_red"
                                                href="#">
                                                 More Detail
                                             </a>
                                         </li>
                                     </ul>
-                                </div><!-- end drop-down -->
-                            </div><!-- end sidebar__drop-down -->
-
+                                </div><!-- end drop-down right -->
+                            </div><!-- end drop-down -->
                         </li>
-                        <li class="sidebar__el sidebar__el_beauty">
+                        <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
                                 <i class="ico ico_brush"></i>
                                     <span class="sidebar__name">
@@ -505,14 +507,14 @@
                                           fa fa-caret-right">
                                 </i>
                             </a>
-                            <div class="sidebar__drop-down">
-                                <div class="drop-down">
+                            <!-- begin drop-down -->
+                            <div class="drop-down">
+                                <div class="drop-down__left">
+
+                                    <h6 class="drop-down__title">
+                                        Usefull links
+                                    </h6>
                                     <ul class="drop-down__list">
-                                        <li class="drop-down__el">
-                                            <h6 class="drop-down__title">
-                                                Usefull links
-                                            </h6>
-                                        </li>
                                         <li class="drop-down__el">
                                             <a class="drop-down__link"
                                                href="#">
@@ -556,12 +558,12 @@
                                             </a>
                                         </li>
                                     </ul>
+                                </div>
+                                <div class="drop-down__right">
+                                    <h6 class="drop-down__title">
+                                        New Arrivals
+                                    </h6>
                                     <ul class="drop-down__list">
-                                        <li class="drop-down__el">
-                                            <h6 class="drop-down__title">
-                                                New Arrivals
-                                            </h6>
-                                        </li>
                                         <li class="drop-down__el">
                                             <a class="drop-down__link" href="#">
                                                 <img class="drop-down__img"
@@ -575,14 +577,16 @@
                                             </span>
                                         </li>
                                         <li class="drop-down__el">
-                                            <a class="drop-down__link"
+                                            <a class="drop-down__link
+                                                      drop-down__link_red"
                                                href="#">
                                                 More Detail
                                             </a>
                                         </li>
                                     </ul>
-                                </div><!-- end drop-down -->
-                            </div><!-- end sidebar__drop-down -->
+                                </div><!-- end drop-down__right -->
+                            </div><!-- end drop-down -->
+                            <!-- end drop-down -->
                         </li>
                         <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
@@ -600,7 +604,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="sidebar__el sidebar__el_smartphones">
+                        <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
                                 <i class="ico ico_gadgets"></i>
                                     <span class="sidebar__name">
@@ -610,9 +614,9 @@
                                           fa fa-caret-right">
                                 </i>
                             </a>
-
-                            <div class="sidebar__drop-down">
-                                <div class="drop-down">
+                            <!-- begin drop-down -->
+                            <div class="drop-down">
+                                <div class="drop-down__left">
                                     <ul class="drop-down__list">
                                         <li class="drop-down__el">
                                             <h6 class="drop-down__title">
@@ -662,12 +666,12 @@
                                             </a>
                                         </li>
                                     </ul>
+                                </div>
+                                <div class="drop-down__right">
+                                    <h6 class="drop-down__title">
+                                        New Arrivals
+                                    </h6>
                                     <ul class="drop-down__list">
-                                        <li class="drop-down__el">
-                                            <h6 class="drop-down__title">
-                                                New Arrivals
-                                            </h6>
-                                        </li>
                                         <li class="drop-down__el">
                                             <a class="drop-down__link"
                                                href="#">
@@ -682,15 +686,16 @@
                                         </span>
                                         </li>
                                         <li class="drop-down__el">
-                                            <a class="drop-down__link"
+                                            <a class="drop-down__link
+                                                      drop-down__link_red"
                                                href="#">
                                                 More Detail
                                             </a>
                                         </li>
                                     </ul>
-                                </div><!-- end drop-down -->
-                            </div><!-- end sidebar__drop-down -->
-
+                                </div><!-- end drop-down__right -->
+                            </div><!-- end drop-down -->
+                            <!-- end drop-down -->
                         </li>
                         <li class="sidebar__el">
                             <a class="sidebar__link" href="#">
@@ -834,105 +839,57 @@
             </div><!-- end main__col -->
         </div><!-- end main__row -->
 
-        <div class="main__row">
-            <!--<div class="col col-6">-->
-                <!--<div class="collection-title">-->
-                    <!--<img class="collection-title__img"-->
-                         <!--src="src/img/smartphones.png"-->
-                         <!--alt="#"/>-->
-                    <!--<a class="collection-title__link" href="#">-->
-                <!--<span class="collection-title__text">-->
-                    <!--Smartphones & cell phones-->
-                <!--</span>-->
-                    <!--</a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col col-6">-->
-                <!--<div class="collection-item">-->
-                    <!--<ul class="collection-item__list">-->
-                        <!--<li class="collection-item__el">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--iOS-->
-                    <!--</span>-->
-                        <!--</li>-->
-                        <!--<li class="collection-item__el">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--Android-->
-                    <!--</span>-->
-                        <!--</li>-->
-                        <!--<li class="collection-item__el">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--Windows Phone-->
-                    <!--</span>-->
-                        <!--</li>-->
-                        <!--<li class="collection-item__el">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--BlackBerry-->
-                    <!--</span>-->
-                        <!--</li>-->
-                        <!--<li class="collection-item__el">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--Firefox OS-->
-                    <!--</span>-->
-                        <!--</li>-->
-                        <!--<li class="collection-item__el collection-item__el_arrow">-->
-                    <!--<span class="collection-item__name">-->
-                        <!--See All-->
-                    <!--</span>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>&lt;!&ndash; collection-item end &ndash;&gt;-->
-            <!--</div>-->
-
-
-            <div class="menu-collection container">
-                <div class="menu-collection__left">
-                    <div class="menu-collection__name">
-                        <img class="menu-collection__img"
-                             src="src/img/beauty-health.png"
-                             alt="#"/>
-                        <a class="menu-collection__link" href="#">
+        <div class="main__row container">
+            <div class="col col-12">
+                <div class="menu-collection container">
+                    <div class="menu-collection__left">
+                        <div class="menu-collection__name">
+                            <img class="menu-collection__img"
+                                 src="src/img/beauty-health.png"
+                                 alt="#"/>
+                            <a class="menu-collection__link" href="#">
                             <span class="menu-collection__text">
                                 Beauty & Health
                             </span>
-                       </a>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="menu-collection__right">
-                    <ul class="menu-collection__list">
-                        <li class="menu-collection__el">
+                    <div class="menu-collection__right">
+                        <ul class="menu-collection__list">
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 Makeup
                             </span>
-                        </li>
-                        <li class="menu-collection__el">
+                            </li>
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 Body Care
                             </span>
-                        </li>
-                        <li class="menu-collection__el">
+                            </li>
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 Skin Care
                             </span>
-                        </li>
-                        <li class="menu-collection__el">
+                            </li>
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 Hair Care
                             </span>
-                        </li>
-                        <li class="menu-collection__el">
+                            </li>
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 Perfumes
                             </span>
-                        </li>
-                        <li class="menu-collection__el">
+                            </li>
+                            <li class="menu-collection__el">
                             <span class="menu-collection__item">
                                 See All
                             </span>
-                        </li>
-                    </ul>
-                </div><!-- end menu-collection__right-->
-            </div><!-- end menu-collection-->
+                            </li>
+                        </ul>
+                    </div><!-- end menu-collection__right-->
+                </div><!-- end menu-collection-->
+            </div>
         </div><!-- end main__row-->
 
         <div class="main__row">
@@ -1655,8 +1612,8 @@
         </div><!-- end subscribe-line -->
     </section><!-- end newsletter -->
 
-    <footer class="footer container">
-        <div class="footer__top">
+    <footer class="footer container row">
+        <div class="footer__top row">
             <div class="footer__col col-3">
                 <div class="contacts">
                     <h6 class="contacts__title">about us</h6>
@@ -1690,11 +1647,11 @@
             </div><!-- end footer__col -->
             <div class="footer__col col-3">
                 <div class="vertical-list">
-                    <div class="title">
-                        <span class="title__name">
-                            information
-                        </span>
-                    </div>
+                    <!--<div class="title">-->
+                        <!--<h6 class="title__name">-->
+                            <!--information-->
+                        <!--</h6>-->
+                    <!--</div>-->
                     <ul class="vertical-list__item">
                         <li class="vertical-list__el">
                             <a class="vertical-list__link" href="#">
@@ -1731,6 +1688,8 @@
                                 </span>
                             </a>
                         </li>
+                    </ul>
+                    <ul class="vertical-list__item">
                         <li class="vertical-list__el">
                             <a class="vertical-list__link" href="#">
                                 <span class="vertical-list__text">
@@ -1932,46 +1891,47 @@
                 </div><!-- end post -->
             </div><!-- end footer__col -->
         </div><!-- end footer__top -->
-        <div class="footer__bottom">
-            <div class="footer__col col-6 text-left">
-                <div class="copyright">
+        <div class="footer__bottom row"><!-- end footer__bottom -->
+            <div class="footer__copyright">
+                <div class="footer__col col-6 text-left">
+                    <div class="copyright">
                     <span class="copyright__descr">
                         &copy;2015 Home Market Red. All rights Reserved
                     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__col col-6 text-right">
-                <div class="payments">
-                    <ul class="payments__list">
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-visa"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-mastercard"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-amex"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-paypal"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-google-wallet"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-discover"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-diners-club"></i>
-                        </li>
-                        <li class="payments__el">
-                            <i class="payments__ico fa fa-cc-jcb"></i>
-                        </li>
-                    </ul>
-                </div><!-- end payments -->
-            </div><!-- end footer__col -->
+                <div class="footer__col col-6 text-right">
+                    <div class="payments">
+                        <ul class="payments__list">
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-visa"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-mastercard"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-amex"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-paypal"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-google-wallet"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-discover"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-diners-club"></i>
+                            </li>
+                            <li class="payments__el">
+                                <i class="payments__ico fa fa-cc-jcb"></i>
+                            </li>
+                        </ul>
+                    </div><!-- end payments -->
+                </div><!-- end footer__col -->
+            </div><!-- end footer__copyright -->
         </div><!-- end footer__bottom -->
-
     </footer><!-- end footer -->
 </div><!-- end wrapper -->
 
