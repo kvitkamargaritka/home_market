@@ -1,16 +1,17 @@
 .wrapper {
   margin: 0 auto;
-  background: #ffffff;
+  background: #fff;
   font-family: "ProximaNova";
   color: dimgrey;
 }
 
 .container {
-  width: 1180px;
   max-width: 1180px;
+  min-width: 1180px;
   margin: 0 auto;
 }
 
+//top-line
 .top-line {
   background-color: #F0F0F0;
   border-bottom: 1px solid #e5e5e5;
@@ -18,12 +19,9 @@
 
 //top-menu
 .top-menu {
-
-  &__flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   &__left {
 
@@ -36,14 +34,22 @@
 
 //header
 .header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   padding: 25px 0;
 
-  &__flex {
+  &__row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__flex {
   }
 }
 
@@ -56,22 +62,36 @@
     justify-content: space-between;
     margin: 15px 0;
   }
+
+  &__left {
+
+  }
+
+  &__right {
+
+  }
 }
 
 //footer
 .footer {
 
   &__top {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   &__bottom {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px solid #f2f2f2;
   }
 
   &__copyright {
-    padding: 30px 0;
-    border-top: 1px solid #f2f2f2;
+
   }
 
 }
@@ -79,5 +99,21 @@
 //newsletter
 .newsletter {
   background-color: #F55751;
-  margin: 20px 0;
+  margin: 30px 0;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
 }

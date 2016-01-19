@@ -1,12 +1,24 @@
 .slick {
 
+  &-slider:hover {
+    .slick-next:before {
+      content: '→';
+      color: #ccc;
+      font-size: 22px;
+    }
+
+    .slick-prev:before {
+      content: '←';
+      color: #222;
+      font-size: 22px;
+    }
+  }
+
   &-prev {
     left: 2px;
 
     &:before {
-      content: '←';
-      color: #ccc;
-      font-size: 22px;
+      content: '';
     }
   }
 
@@ -14,10 +26,9 @@
     right: 1px;
 
     &:before {
-      content: '→';
-      color: #ccc;
-      font-size: 22px;
+      content: '';
     }
+
   }
 
   &-slide {

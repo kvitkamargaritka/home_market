@@ -46,10 +46,13 @@ $(function() {
 /** end drop-down **/
 
 /** animate **/
+
   $('.social__ico').hover(function(){
-    $(this).addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $(this).addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd ' +
+        'MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animated tada')
     });
   });
+
 /** end animate **/
 });
